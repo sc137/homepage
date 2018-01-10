@@ -1,4 +1,4 @@
-% sable cantus
+% [cantus.us](http://cantus.us/)
 
 # Encrypt Your Tax Docs BEFORE You Send Them!
 
