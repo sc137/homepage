@@ -1,0 +1,3 @@
+pandoc infile.md -o outfile.html --template template.html --css template.css -s
+
+use % sable cantus at top of md file...
