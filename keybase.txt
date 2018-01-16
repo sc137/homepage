@@ -1,0 +1,86 @@
+==================================================================
+https://keybase.io/sable
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cantus.us
+  * I am sable (https://keybase.io/sable) on keybase.
+  * I have a public key with fingerprint EAEA 37ED 9888 AB9F 5911  056F 0810 A090 72C8 358A
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01010f7bc866baba9633675e0cc1b683690c6fa5821a4a9c821ef70201cdc3461d1b0a",
+      "fingerprint": "eaea37ed9888ab9f5911056f0810a09072c8358a",
+      "host": "keybase.io",
+      "key_id": "0810a09072c8358a",
+      "kid": "01010f7bc866baba9633675e0cc1b683690c6fa5821a4a9c821ef70201cdc3461d1b0a",
+      "uid": "cfd90af8403941bfc0b06e249c2f8419",
+      "username": "sable"
+    },
+    "merkle_root": {
+      "ctime": 1516128613,
+      "hash_meta": "e7d50eae0dccdd87cd8a226dbc4953ad9061c315d50a5884c4ad48d1f04bae86",
+      "seqno": 1933694
+    },
+    "revoke": {
+      "sig_ids": [
+        "b71310c8482a8e687bc9c6c319c77e1862dff059f61343f88532ddeb718172020f"
+      ]
+    },
+    "service": {
+      "hostname": "cantus.us",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1516128614,
+  "expire_in": 157680000,
+  "prev": "11ec298096e13a698483d758489abab91ba94e1d9b948c1af985e204d43608ac",
+  "seqno": 16,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtU2tsFUUUbqG0pfIoiBWRYrtCMOSKO/uYnbloKg/D5SEEJNQW4To7O9tue3v3
+sntvsak8ClEKAXKhKoTYopWHpcUKKqCYFGPAQmkiYCmEhzYIaKGCaAJIEWcREqN/
+3f1xsme/853vfGcm3rdnQmpiavp7cadZXZnY8rOekD9vklsu6LZRJvjLhWJ2L7CQ
+wdxosNgyBL8gAv6amk4RhDrRCYayDDWViZQCHSIZYpFCk6hIAkQhmPLITE2UREAN
+KisQGEAXieATTCtcwJyIY4WjnJYRRmSNGRghRHRsqhgAUYWmiIBIRCxqEkWyirzC
+Qtv1Krg4nbhstGXzHP8I/i3vv/j/WXfsHh01DSwSEymijBWgm1TURcgkBVOJJwH2
+gC5zwqSEcbRL9BATFvqEEuYUh1jQse2o5yyNWt5/oAIIJASBzKcjbmGwhEWJZ4pm
+qCJ3RjQoNQykUQMRSYKGThWsyoQrgIDKQOUoLhwpVCGGggxgiopOGIJchMvmh23e
+AfNpscIVOKzULmZec9cq4J65gn+OoGtABiLdH0EKkghiEHGjMIWcHFNNYwBByTBN
+UcUmF6nIJkKqLBkG44UIaBK3yRTmLvTaOaUWvUfvren++JSEozF3dMzlgiKOHbWp
+HeLpwmg04vdciZZFPNgCpgfvEwR1K2zwA8ILSpnjWnaYz8CR/zZM8QnstYjlsKDl
+IVQNIpE/XhtWyikBYFTCSMSQAZlAzOeTDU3lAfMzoGPAD4LCgIF1rCAKiImRyiRR
+MRQZiojQfzgIuU5S4C3TKgiTaMzhC01b0UNOSkhMTcjMyE7q7NS6NlTWb8ob0Mt+
+cKl69fBuVEJa7/QHmexn+nf3zgRjHkNJ19ddSFRabhg1yU8ty2mPbN4yw18zNHzo
+6avj85cfzEHK4pyMgz2NZPt2+XNyyo1sPG3ApKIV6i+Dcr7/s6P2xLAvW7TKsVbX
+6qpAl29TQfVHJ0fOqkeDlaIpJ5RXJzS+c2RL3R9Lkzf+sDu/tVdSQ9OQeCC1cWXD
+pQvasqPTRg1f2N1/c9UX4aw+096aPWrE/MYF40Dg837XU7+tUP1VscHvn1uvrmjT
+tXkjfr88rsfZH4f5pCuPXrv9cd7srVebVkHaehyePZzy6+xtDxmZsKQhLfbdxrol
+HV/tWpJy0Xdnb97ESetmZt3d/U3+tfOn5t38LK19f/b0NX3Cq4RMeqru3VeeOFN/
+ZmtzXVted/KIM5NHT8mId6Gq89sD/R6eMf5KRfPFPHfuI409k7fR1gWhlHg8VP3k
+84sCN3ObPq1+/VITKpjVufvAMWltbNfKgO+uvn7R42O278g9t2nQ1x/ml/Xz3xoY
+HNBdo6UvCc0B+7JziwYuXZt1MTGQsbylpaL0p9/Sk07HhdWHatZmFk4d25E1PGNC
++5o7LcFbtXdmSnsPvzF0SP0OJF3e1/9k4PSBPbb+wfSJc9/cO+V4WtmGxeOLsxpe
+6iwylVNF1Wk5kzveTgrvxDmxo/V9x1RO3HVs2DL32S2tg48k7nFGVgRfbu+o3Vk+
+4YXmPYVi2ycoVj+1+kZbVe6LtSWbi/8C
+=/HX7
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sable
+
+==================================================================
+
