@@ -1,0 +1,73 @@
+==================================================================
+https://keybase.io/sable
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://cantus.us
+  * I am sable (https://keybase.io/sable) on keybase.
+  * I have a public key with fingerprint A18C 5546 1B0D B6E7 A9D3  ACCE D57E 63B5 9D2C 36E1
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101528f49b7c100a05834951d135af17a8a6fdfc1ae6979ba9c0866eea7892920e00a",
+      "fingerprint": "a18c55461b0db6e7a9d3acced57e63b59d2c36e1",
+      "host": "keybase.io",
+      "key_id": "d57e63b59d2c36e1",
+      "kid": "0101528f49b7c100a05834951d135af17a8a6fdfc1ae6979ba9c0866eea7892920e00a",
+      "uid": "cfd90af8403941bfc0b06e249c2f8419",
+      "username": "sable"
+    },
+    "service": {
+      "hostname": "cantus.us",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1518771169,
+  "expire_in": 157680000,
+  "prev": "568d19273b50134000c6cc812f76faf5903edd3b3d6dbc207cc25bf6d5fc2657",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Comment: GPGTools - http://gpgtools.org
+
+owGtUmtMFFcYXR4rFkNQK/bhYmFsCbWUzt3ZefGwEkQS2iLZRkAp2c7cuQPDPtld
+XqtQDRUBUdtUsCkqkjTFJ4ogpWWtQIKPxagtlL4WkWoxVJoqFpQg0hmi//qz98/N
+Pd855/vOl/tJkJ9qoc+PZfDswShqxKdvjFdtrqgf3YLxVqEEi9mCGdH8hUwCcjgN
+RknAYjAc4IDUMqKO5WkIcJzDSYbQsSQQAEFyIqA5hqNEQYSAQxRLszzHQpyhKIQ4
+mmG1rBZHsgiLwkTJkoPsNrtkccq2HGAgSeoowOMCTyGaYwWCgxAJJI0ogidZQQsJ
+CgFZmGt1KAp5OJ5zoGjJKmPywzA/3n/w/+e5C+btoCiwOCcyOpxgdYAXIc7jFNLq
+WKiVQcAqRAeyWzgzktkOjjchrDQKk6FCCSJlq0qMp2XIWZwFjugCh6yy2a1OK7Sa
+ZDjX6bTFKCpniU2hFSHe8NTAwEsWQV6gLChEdodktWAxQGZCp6Q4AhIwNA0AxUZh
+qNgm2ZFBUhgkTTG4fJQ2qFC2JClGAKyWljeGA0Kvk2uQgpABWpGmRE4kWZxAgkDw
+hEAJPNTiNIRakhcpgRShliJpTMmUb7HK5nIvJ5ejpJVyLJyzwC4nDqzyJfxVPgtV
+ocvD/RtrNq5fEdR+52j/iavPfp3aV/lyqsDnFj9DdvUHzyU2NMKvb0y+ekbjs4HN
+qj9Zubc29YWDHdtvPekM0Rs91VeOPL71aJaMO65RTyd5r1RmLxhbMtiU7npcHvsg
+dNmijr+6Lm1Tf7516cdM53SC77qy1RmHMjDXB66Am8HhZVNYy6+mkebT/fBSWdv4
++v33bKlxtzcWz7zRN9BTC95LfvmfNaONizvyiNrPjq4Jqa0KypzondktGp1FAemb
+xqznLB0fuvSkJ151tedi9vYjAXXtBTubvb/dThs+ZXnoSDFl5Z5uo6dObWb/mLz3
+TvmQsTpYYH/uXvVD/676SZS3whhrTPb2FQ0nRpd+caaJOJ504FrdgXe7E/WezBY9
+SI4X5r7Lm7mr3hQQhzVpKi0Juj81KZETO+xBh1uvZ5g17uKXcl8xpdXOhrtCB8MH
+jlVff7trX8rzGU+ywtiIkrnRisGEww9/aXSM5/fsHS7tBUvXzqkfcfoLJTfue8Im
+3lybXdgq+o6MiDe93w61BdCBX040SFnXFu17S+fzflpmRKe59bI50jDk8ruwZ0/L
+63V+kavGPD9Npz44+an77oZvqrzE5fPd417392fd6h27Z033813B9SvhMsOJ6oiL
+q1NrirDx3Hh/we6/MmQyKLKmskff/HvDtvKRFwfTt4YmHOqdCksSulr3H/uoxLO8
+qiJkIA37+07/TrzLHHnuq/PuBRPm2Nc07Uv+BQ==
+=kizN
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/sable
+
+==================================================================
