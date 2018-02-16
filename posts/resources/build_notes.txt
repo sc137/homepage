@@ -1,0 +1,16 @@
+Use pandoc to convert your md file into html using the same templates for html and css...
+
+put this:
+
+% [cantus.us](http://cantus.us/)
+
+at top of md file...
+
+run this:
+
+pandoc infile.md -o outfile.html \
+--template resources/template.html \
+--css resources/template.css \
+-s
+
+

@@ -1,3 +1,0 @@
-pandoc infile.md -o outfile.html --template template.html --css template.css -s
-
-use % [cantus.us](http://cantus.us/) at top of md file...
