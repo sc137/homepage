@@ -32,6 +32,8 @@ You can send them the file directly through the DropBox website or get the link 
 ### Step 5: Send the Password via a Separate Method
 If you send an email with a link to your encrypted document, it doesn’t make sense to put the password into that email. Additionally, you might not want to send the password from your account to that same account. Try to send the password over iMessage, Signal, or another instant messenger, or to a secondary email address the person has.
 
+This would be a good time to send them the [decryption instructions](http://cantus.us/posts/decrypt-tax-docs.html) if they need some help.
+
 ### Step 6: The Takedown
 Once the recipient has confirmed that they have the documents and have decrypted them on their own machine you will remove the encrypted documents from DropBox. Sure they are safe, but there is no reason to keep that online.
 
