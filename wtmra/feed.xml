@@ -14,7 +14,7 @@
 <itunes:name>What's This Movie Really About?</itunes:name>
 <itunes:email>theindispensableshow@gmail.com</itunes:email>
 </itunes:owner>
-<itunes:image href="https://archive.org/download/wtmra_logo/wtmra.png"/>
+<itunes:image href="https://archive.org/download/what_s_this_3000/what_s_this_3000.png"/>
 <itunes:category text="Movie Review">
 <itunes:category text="Entertainment"/>
 </itunes:category>
@@ -35,6 +35,78 @@
 <guid>https://cantus.us/wtmra/67BEE510-8A6D-4AB5-B106-6CE589B06353</guid>
 <pubDate>25 Sep 2016 12:00:00 GMT</pubDate>
 <itunes:duration>1:03:02</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+</item>
+
+<item>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:title>What's Zootopia Really About?</itunes:title>
+<itunes:episode>2</itunes:episode>
+<itunes:season>1</itunes:season>
+<title>What's The Fisher King Really About?</title>
+<itunes:author>Sable and Dave</itunes:author>
+<itunes:subtitle>The WTMRA Archive Feed</itunes:subtitle>
+<itunes:summary>What's The Fisher King Really About?</itunes:summary>
+<description>What's The Fisher King Really About?</description>
+<content:encoded>What's The Fisher King Really About?</content:encoded>
+<enclosure length="117807221" type="audio/mpeg" url="https://archive.org/download/wtmra/What%27s%20the%20Fisher%20King%20Really%20About%3F.mp3"/>
+<guid>https://cantus.us/wtmra/A949DC43-ACF0-4FF9-B28D-C61D2A432E14</guid>
+<pubDate>25 Sep 2016 12:00:00 GMT</pubDate>
+<itunes:duration>1:24:14</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+</item>
+
+<item>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:title>What's Dirty Harry Really About?</itunes:title>
+<itunes:episode>3</itunes:episode>
+<itunes:season>1</itunes:season>
+<title>What's The Fisher King Really About?</title>
+<itunes:author>Sable and Dave</itunes:author>
+<itunes:subtitle>The WTMRA Archive Feed</itunes:subtitle>
+<itunes:summary>What's Dirty Harry Really About?</itunes:summary>
+<description>What's Dirty Harry Really About?</description>
+<content:encoded>What's Dirty Harry Really About?</content:encoded>
+<enclosure length="142427449" type="audio/mpeg" url="https://archive.org/download/wtmra/What%27s%20Dirty%20Harry%20Really%20About%3F.mp3"/>
+<guid>https://cantus.us/wtmra/DD31CCB0-142F-4DD3-A3B6-28073832F099</guid>
+<pubDate>25 Sep 2016 12:00:00 GMT</pubDate>
+<itunes:duration>1:44:54</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+</item>
+
+<item>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:title>What's The Magnificent 7 Really About?</itunes:title>
+<itunes:episode>4</itunes:episode>
+<itunes:season>1</itunes:season>
+<title>What's The Magnificent 7 Really About?</title>
+<itunes:author>Sable and Dave</itunes:author>
+<itunes:subtitle>The WTMRA Archive Feed</itunes:subtitle>
+<itunes:summary>What's The Magnificent 7 Really About?</itunes:summary>
+<description>What's The Magnificent 7 Really About?</description>
+<content:encoded>What's The Magnificent 7 Really About?</content:encoded>
+<enclosure length="103989695" type="audio/mpeg" url="https://archive.org/download/wtmra/What%27s%20The%20Magnificent%207%20Really%20About%3F.mp3"/>
+<guid>https://cantus.us/wtmra/C4E5D0C9-71D5-4B70-8BF9-E30AB3481624</guid>
+<pubDate>19 Oct 2016 12:00:00 GMT</pubDate>
+<itunes:duration>01:10:13</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+</item>
+
+<item>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:title>What's There Will Be Blood Really About?</itunes:title>
+<itunes:episode>5</itunes:episode>
+<itunes:season>1</itunes:season>
+<title>What's There Will Be Blood Really About?</title>
+<itunes:author>Sable and Dave</itunes:author>
+<itunes:subtitle>The WTMRA Archive Feed</itunes:subtitle>
+<itunes:summary>What's There Will Be Blood Really About?</itunes:summary>
+<description>What's There Will Be Blood Really About?</description>
+<content:encoded>What's There Will Be Blood Really About?</content:encoded>
+<enclosure length="135974464" type="audio/mpeg" url="https://archive.org/download/wtmra/What%27s%20There%20Will%20Be%20Blood%20Really%20About.mp3"/>
+<guid>https://cantus.us/wtmra/87BC88C6-7CF2-43EC-A068-202A2DC52D59</guid>
+<pubDate>06 Nov 2016 12:00:00 GMT</pubDate>
+<itunes:duration>01:45:26</itunes:duration>
 <itunes:explicit>no</itunes:explicit>
 </item>
 
