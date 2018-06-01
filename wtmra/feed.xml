@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<channel>
+<title>What's This Movie Really About?</title>
+<link>https://cantus.us/wtmra/</link>
+<language>en-us</language>
+<copyright>&#8471; &amp; &#xA9; 2018 Sable and Dave</copyright>
+<itunes:subtitle>What are modern movies teaching these days? Join Sable and Dave as they explore the morality -- or Cine-morality - of today’s films, both old and new, on What’s This Movie REALLY About?</itunes:subtitle>
+<itunes:author>Sable and Dave</itunes:author>
+<itunes:summary>What are modern movies teaching these days? Join Sable and Dave as they explore the morality -- or Cine-morality - of today’s films, both old and new, on What’s This Movie REALLY About?</itunes:summary>
+<description>What are modern movies teaching these days? Join Sable and Dave as they explore the morality -- or Cine-morality - of today’s films, both old and new, on What’s This Movie REALLY About?</description>
+<itunes:type>episodic</itunes:type>
+<itunes:owner>
+<itunes:name>What's This Movie Really About?</itunes:name>
+<itunes:email>theindispensableshow@gmail.com</itunes:email>
+</itunes:owner>
+<itunes:image href="https://archive.org/download/wtmra_logo/wtmra.png"/>
+<itunes:category text="Movie Review">
+<itunes:category text="Entertainment"/>
+</itunes:category>
+<itunes:explicit>no</itunes:explicit>
+
+<item>
+<itunes:episodeType>full</itunes:episodeType>
+<itunes:title>What's Zootopia Really About?</itunes:title>
+<itunes:episode>1</itunes:episode>
+<itunes:season>1</itunes:season>
+<title>What's Zootopia Really About?</title>
+<itunes:author>Sable and Dave</itunes:author>
+<itunes:subtitle>The WTMRA Archive Feed</itunes:subtitle>
+<itunes:summary>What's Zootopia Really About?</itunes:summary>
+<description>What's Zootopia Really About?</description>
+<content:encoded>What's Zootopia Really About?</content:encoded>
+<enclosure length="84039862" type="audio/mpeg" url="https://archive.org/download/wtmra/What%27s%20Zootopia%20Really%20About%3F.mp3"/>
+<guid>https://cantus.us/wtmra/67BEE510-8A6D-4AB5-B106-6CE589B06353</guid>
+<pubDate>25 Sep 2016 12:00:00 GMT</pubDate>
+<itunes:duration>1:03:02</itunes:duration>
+<itunes:explicit>no</itunes:explicit>
+</item>
+
+</channel>
+</rss>
