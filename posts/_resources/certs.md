@@ -83,5 +83,5 @@
 * Modules 1 - 4: 1/17 - 1/18 2013
 * Modules 5 - 6: 9/20/2013
 
-### CompTIA A+
-* 220-301 A+ Linear Core Hardware Exam (Good For Life) certification
+### CompTIA A+ Core Hardware (220-301)
+
