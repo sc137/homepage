@@ -10,6 +10,10 @@
 
 # My Recent Training and Certificates
 
+### Candidate: Certified Information Systems Security Professional (CISSP)
+* Exam passed 5/30/18, Certification #657467
+* (ISC)2
+
 ### Certificate of Completion: Understanding Cisco Cybersecurity Fundamentals 
 * Certificate
 * May 2018
@@ -69,7 +73,7 @@
 * 7 hours
 * 11/21/14
 
-### APEX Four Day Workshop 
+### Oracle APEX Four Day Workshop 
 * 30 hours
 * 8/11/14 - 8/14/14
 
@@ -78,3 +82,6 @@
 * 24 hours
 * Modules 1 - 4: 1/17 - 1/18 2013
 * Modules 5 - 6: 9/20/2013
+
+### CompTIA A+
+* 220-301 A+ Linear Core Hardware Exam (Good For Life) certification
