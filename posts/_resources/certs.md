@@ -4,18 +4,26 @@
 		border: 1px solid #021a40;
 	}
 	h1 {
-		text-decoration: underline;
 	}
 	</style>
 
 # My Recent Training and Certificates
 
-### Candidate: Certified Information Systems Security Professional (CISSP)
-* Exam passed 5/30/18, Certification #657467
+<hr />
+
+### Certified Information Systems Security Professional (CISSP)
+* 7/3/2018 #657467
 * (ISC)2
 
-### Certificate of Completion: Understanding Cisco Cybersecurity Fundamentals 
-* Certificate
+<img src="img/CISSP-logo-2lines.jpg" width=250px>
+
+### Cisco Networking Academy Connecting Things
+* Certificate of Completion, Certified Instructor
+* June 22, 2018
+* 36 hours
+
+### Understanding Cisco Cybersecurity Fundamentals 
+* Certificate of Completion
 * May 2018
 
 ### BIE Project Based Learning 
@@ -82,6 +90,4 @@
 * 24 hours
 * Modules 1 - 4: 1/17 - 1/18 2013
 * Modules 5 - 6: 9/20/2013
-
-### CompTIA A+ Core Hardware (220-301)
 
