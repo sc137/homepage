@@ -69,6 +69,8 @@
 * Certificate
 * 3/8/15
 
+<img src="img/adobe-certified-associate-in-visual-communication-using-adobe-photoshop.png" width="125" />
+
 ### Enhancing Basic Skills Across the Curriculum
 * 6 hours
 * 1/27/15
