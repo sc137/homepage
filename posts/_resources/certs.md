@@ -17,6 +17,10 @@
 
 <img src="img/CISSP-logo-2lines.jpg" width=250px>
 
+### Understanding Cisco Cybersecurity Operations
+* Certificate of Completion
+* July 2018
+
 ### Cisco Networking Academy Connecting Things
 * Certificate of Completion, Certified Instructor
 * June 22, 2018
