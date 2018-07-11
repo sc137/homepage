@@ -15,18 +15,20 @@
 * 7/3/2018 #657467
 * (ISC)2
 
-<img src="img/CISSP-logo-2lines.jpg" width=250px>
+<a href="https://www.youracclaim.com/badges/b95d6824-708f-4617-9473-8f80d5c67cde/public_url" target="__blank"><img src="img/CISSP-logo-2lines.jpg" width=250px></a>
 
 ### Understanding Cisco Cybersecurity Operations
+* 100 hours
 * Certificate of Completion
 * July 2018
 
 ### Cisco Networking Academy Connecting Things
 * Certificate of Completion, Certified Instructor
-* June 22, 2018
+* June 2018
 * 36 hours
 
 ### Understanding Cisco Cybersecurity Fundamentals 
+* 100 hours
 * Certificate of Completion
 * May 2018
 
