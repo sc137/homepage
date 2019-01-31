@@ -17,6 +17,10 @@
 
 <a href="https://www.youracclaim.com/badges/b95d6824-708f-4617-9473-8f80d5c67cde/public_url" target="__blank"><img src="img/CISSP-logo-2lines.jpg" width=250px></a>
 
+### Certificate of Completion: DevSecOps Integrating Security Into DevOps
+* 1/31/2019
+* (ISC)2 - 5 CPE
+
 ### Understanding Cisco Cybersecurity Operations
 * 100 hours
 * Certificate of Completion
