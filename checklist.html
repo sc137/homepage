@@ -1,7 +1,45 @@
 <!DOCTYPE html>
+<!--
+==============================================================================
+           "GitHub HTML5 Pandoc Template" v2.1 — by Tristano Ajmone           
+==============================================================================
+Copyright © Tristano Ajmone, 2017, MIT License (MIT). Project's home:
+- https://github.com/tajmone/pandoc-goodies
+The CSS in this template reuses source code taken from the following projects:
+- GitHub Markdown CSS: Copyright © Sindre Sorhus, MIT License (MIT):
+  https://github.com/sindresorhus/github-markdown-css
+- Primer CSS: Copyright © 2016-2017 GitHub Inc., MIT License (MIT):
+  http://primercss.io/
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+The MIT License 
+Copyright (c) Tristano Ajmone, 2017 (github.com/tajmone/pandoc-goodies)
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+Copyright (c) 2017 GitHub Inc.
+"GitHub Pandoc HTML5 Template" is Copyright (c) Tristano Ajmone, 2017, released
+under the MIT License (MIT); it contains readaptations of substantial portions
+of the following third party softwares:
+(1) "GitHub Markdown CSS", Copyright (c) Sindre Sorhus, MIT License (MIT).
+(2) "Primer CSS", Copyright (c) 2016 GitHub Inc., MIT License (MIT).
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+==============================================================================-->
 <html>
 <head>
   <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>Audio-Setup-Checklist</title>
   <style type="text/css">
@@ -31,11 +69,12 @@ Set switch to Ethernet</li>
 <li><input type="checkbox" disabled="" />
 USB for recording</li>
 <li><input type="checkbox" disabled="" />
-iPod Stereo adapter plugged into 15 and 16</li>
+iPod Stereo adapter plugged into Channels 15 and 16</li>
 <li><input type="checkbox" disabled="" />
-Headphones with 1/4" adapter to monitor mix</li>
+Headphones with 1/4" adapter</li>
 </ul>
 <h2 id="loudspeakers">Loudspeakers</h2>
+<p>Place the speaker stands parallel to each other in “front” of the “stage” setup. Angle the QSC loudspeakers to point toward the middle of the audience raised up above your head. Wrap the power cable and XLR cable loosely around the speaker stands.</p>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
 2 x QSC CP8</li>
@@ -74,13 +113,14 @@ OPTIONAL - Headphones with 1/4" adapter for headphone splitter</li>
 OPTIONAL - 1/4" to Stereo mini adapter if headphone splitter used</li>
 </ul>
 <h2 id="network-extension">Network Extension</h2>
+<p>We cannot plug directly into the network and must use a wifi router to get better signal to the ipad and also allow ethernet to the video streamer.</p>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
-Airport Extreme</li>
+Router: Airport Extreme or other preconfigured router</li>
 <li><input type="checkbox" disabled="" />
-Power cable (white)</li>
+Power cable for the router</li>
 <li><input type="checkbox" disabled="" />
-Ethernet from building into WAN</li>
+Ethernet from building into WAN port</li>
 <li><input type="checkbox" disabled="" />
 25’ Ethernet TO mixer from LAN port</li>
 <li><input type="checkbox" disabled="" />
@@ -90,6 +130,8 @@ Ethernet from building into WAN</li>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
 Microphone stand</li>
+<li><input type="checkbox" disabled="" />
+Mic clip appropriate for the microphone</li>
 <li><input type="checkbox" disabled="" />
 Audio Technica handheld microphone</li>
 <li><input type="checkbox" disabled="" />
@@ -101,6 +143,8 @@ Plug into #1</li>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
 Microphone stand</li>
+<li><input type="checkbox" disabled="" />
+Mic clip appropriate for the microphone</li>
 <li><input type="checkbox" disabled="" />
 SM 58 handheld microphone</li>
 <li><input type="checkbox" disabled="" />
@@ -114,13 +158,15 @@ Plug into #2</li>
 <li><input type="checkbox" disabled="" />
 Microphone stand</li>
 <li><input type="checkbox" disabled="" />
+Mic clip appropriate for the microphone</li>
+<li><input type="checkbox" disabled="" />
 handheld microphone</li>
 <li><input type="checkbox" disabled="" />
 30 - 50’ XLR cable</li>
 <li><input type="checkbox" disabled="" />
 Plug into #3 (or following available)</li>
 </ul>
-<h2 id="instrumentalists">Instrumentalists</h2>
+<h2 id="instrumentalists-with-14-output">Instrumentalists with 1/4" Output</h2>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
 1/4" cable from instrument directly into Mixer</li>
@@ -131,7 +177,8 @@ Acoustic guitar into Channel 10</li>
 <li><input type="checkbox" disabled="" />
 All other instruments sequentially after</li>
 </ul>
-<h2 id="power-cables">Power cables</h2>
+<h2 id="extension-chords-and-power-strips">Extension Chords and Power Strips</h2>
+<p>Avoid daisy chaining power strips together. Try to run an extension cable to the building power for each extension cable.</p>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
 Extension cable to mixer</li>
@@ -145,7 +192,9 @@ Power strip at mixer</li>
 <h2 id="power-on-procedure">Power On Procedure</h2>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
-Turn on Mixer after router and ethernet cables are connected and powered on</li>
+Turn on wi-fi router</li>
+<li><input type="checkbox" disabled="" />
+Turn on Mixer after the router is connected (could take 30 seconds)</li>
 <li><input type="checkbox" disabled="" />
 Turn on QSC speakers</li>
 <li><input type="checkbox" disabled="" />
@@ -164,6 +213,8 @@ Bring volume up to test</li>
 <ul class="task-list">
 <li><input type="checkbox" disabled="" />
 Clean up all cable runs by running cables in parallel together</li>
+<li><input type="checkbox" disabled="" />
+Coil up excessive cables neatly on the floor</li>
 <li><input type="checkbox" disabled="" />
 Move cables away from high traffic areas when possible</li>
 <li><input type="checkbox" disabled="" />
