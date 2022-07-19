@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width" initial-scale=1>
 <meta name="description" content="Official Homepage - Sable Cantus">
 <meta name="author" content="Sable Cantus">
 
@@ -17,14 +17,8 @@
 ------------------------------------------------------>
 <style type="text/css"> 
 	body {
-		background-color: #fefefe;
+		background-color: #f7f7f7;
 		color:#0f0f0f;
-		margin: 1em 10em;
-		width: 70%;
-		margin: 0 auto;
-	}
-	p {
-    	max-width: 75%;
 	}
 	a {
 		color: #0bc;
@@ -44,11 +38,13 @@
 	.prompt {
         color: rgba(255, 0 , 0, 0.8);
 	}
+	.wrap {
+    	width: 80%;
+    	margin: 0 auto;
+	}
     footer {
-        width: 100%;
         bottom: 0;
-        position: fixed;
-        background-color: white;
+        margin-top: 25px;
         padding-bottom: 5px;
         font-family: monospace;
     }
@@ -56,6 +52,7 @@
 </head>
 
 <body>
+<div class="wrap">    
 
 <p><span class="prompt">$ </span>
     <span class="cmd">./homepage.sh</span><br>
@@ -132,15 +129,14 @@
    <a href='https://twitter.com/sablecantus' target="_blank">@sablecantus</a>
 </p>
 
-<br><br><br>
-
 <footer>
     <small><br>
-    &nbsp; &copy;2022 All Rights Reserved.
+    &copy;2022 All Rights Reserved.
     <br>
     <span class="prompt">$ </span>
     <i>curl https://cantus.us/public.key<i>
     </small>
 </footer>
+</div>
 </body>
 </html>
