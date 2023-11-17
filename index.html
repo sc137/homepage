@@ -48,6 +48,10 @@
     	margin: 0 auto;
 	    padding: 15px 0;
     }
+    .signature {
+        font-family: cursive;
+        font-size: 1.5em;
+    }
     footer {
         bottom: 0;
         position: relative;
@@ -80,16 +84,11 @@
 <ul>
     <li>
         Visit my  <a href="https://cantus.us/music.html" 
-            target="_blank">music page</a>
+            target="_blank">🎵 music page 🎸</a>
         </li>
     <li>
         Take a look at my <a href="https://cantus.us/certs.html" 
-            target="_blank">security & cloud certifications</a>
-        </li>
-    <li>
-        I have an occasional <a href="https://www.theindispensableshow.com" 
-            target=_blank>podcast</a>
-            <img src="img/tis_logo_orig.png" height=15>
+            target="_blank">professional certifications</a>
         </li>
     <li>
         Here is a fun d20 
@@ -98,28 +97,29 @@
             passphrase generator in python</a>
         </li>
     <li>
-        I use python to track class email blasts 
+        I use a custom 🐍 python 🐍 email system to send and manage 
         <a href="https://github.com/sc137/python-send-email" 
-            target="_blank">class email blasts</a>
+            target="_blank">email blasts</a>
         </li>
     <li>
-        This script is to 
+        This script will let you 
         <a href="https://gist.github.com/sc137/f94436f89f4c1654c4ae4d8445112f31" 
             target="_blank">'toot' to your mastodon instance</a> 
         </li>
     <li><img src="img/tippy.png" height=15>
-        Tippy is a single page HTML/JS
+        Tippy is a single page HTML5/JS
         <a href="http://sc137.github.io/tippy/" target="_blank">
             tip calculator app for your phone</a>
     </li>
     <li>
-        Make presentations using 
+        I make presentations using 
         <a href="https://github.com/sc137/reveal_pres_template" 
-            target="_blank">markdown/pandoc/reveal</a>
+            target="_blank">markdown, pandoc, and revealjs</a>
     </li>
     <li>
+        Never send your private information over email. Be sure to 
         <a href="https://cantus.us/posts/encrypt-tax-docs.html" 
-            target="_blank">Encrypt your private documents before you send them 
+            target="_blank">encrypt your private documents before you send them 
                 over the internet</a>
     </li>
     <li>
@@ -132,13 +132,16 @@
     Thanks for visiting,
 </p>
 
-<p>
-    <a href="mailto:harps_lawyer0q@icloud.com?subject=Website Contact&body=I'm sending this message from your website." title="Send me an email">/sable</a><br/>
+<p class="signature">
+    Sable
 </p>
 
 <footer>
     <small><br>
-    &copy; 2022 All Rights Reserved
+    &copy;<script>
+        let year = new Date();
+        document.write(year.getFullYear());
+    </script> All Rights Reserved
     <br>
     <span class="prompt">$ </span>
     <i class="cmd">curl https://cantus.us/public.key<i>

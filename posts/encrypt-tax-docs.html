@@ -1,54 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal website for Sable Cantus">
-  <meta name="author" content="Sable Cantus">
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
-  <title>cantus.us</title>
-  <style type="text/css">code{white-space: pre;}</style>
-<!--   <link rel="stylesheet" href="template.css" /> -->
-    <link rel="stylesheet" href="https://newcss.net/new.min.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Personal website for Sable Cantus" />
+    <meta name="author" content="Sable Cantus" />
+    <meta http-equiv="Contenst-Style-Type" content="text/css" />
+    <meta name="generator" content="pandoc" />
+    <title>cantus.us</title>
+    <style type="text/css">
+      code {
+        white-space: pre;
+      }
+    </style>
+    <link rel="stylesheet" href="https://newcss.net/new.min.css" />
+  </head>
+  <body>
     <div class="navbar navbar-static-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <span class="doc-title"><a href="http://cantus.us/">cantus.us</a></span>
-        <ul class="nav pull-right doc-info">
-                            </ul>
+      <div class="navbar-inner">
+        <div class="container">
+          <span class="doc-title"
+            ><a href="http://cantus.us/">cantus.us</a></span
+          >
+          <ul class="nav pull-right doc-info"></ul>
+        </div>
       </div>
     </div>
-  </div>
     <div class="container">
-    <div class="row">
-            <div class="span12">
-            <h1 id="encrypt-your-tax-docs-before-you-send-them">Encrypt Your Tax Docs BEFORE You Send Them!</h1>
-<p>It’s that time. We all are doing our taxes online now. Some of us need some help and that usually ends up with digitally sending tax documents.</p>
-<p><em>Do not ever, under any circumstance, email a document that has your SSN, home address, phone number, bank information, etc. unencrypted. That is a good way to lose all of your money and even your identity.</em></p>
-<p>I use two free services to send my encrypted documents out: AESCrypt and Dropbox.</p>
-<h3 id="step-1-install-aescrypt">Step 1: Install AESCrypt</h3>
-<p>Get AESCrypt installed on your computer. Go <a href="https://www.aescrypt.com">here</a> and install for your platform.</p>
-<h3 id="step-2-zip-up-all-of-those-files">Step 2: Zip up all of those files</h3>
-<p>You want to send one encrypted blob of data. Put all of your files into a single folder and zip that up. On the Mac, select the file and go to File &gt;&gt; Compress “Sensitive Docs”.</p>
-<h3 id="step-3-encrypt">Step 3: Encrypt</h3>
-<p>Follow the directions for your platform to encrypt your zip file. On the Mac, drag the file onto the dock icon and enter a strong password when prompted.</p>
-<p>I suggest using a secure password generator like the one over at <a href="https://www.grc.com/passwords.htm">GRC.com</a>. You can also use Lastpass or whatever you use (even the commandline) to manage your passwords. Make a note of that password though. You can keep a copy of the password in TextEdit or NVAlt – the documents are already on your computer.</p>
-<p>Steve Gibson recommended, on the <a href="https://www.grc.com/sn/sn-599.htm">Security Now Podcast</a>, to use a long string of numbers that can easily be read over the phone such as, “32 67 89 14 75 12 99”, etc.</p>
-<h3 id="step-4-drop-it-in-dropbox-using-dropbox-makes-sharing-files-easy.-put-the-encrypted-file-into-your-dropbox-folder-and-click-share-link.">Step 4: Drop it in Dropbox* Using DropBox makes sharing files easy. Put the encrypted file into your dropbox folder and click Share Link.</h3>
-<p>You can send them the file directly through the DropBox website or get the link and send it separately.</p>
-<h3 id="step-5-send-the-password-via-a-separate-method">Step 5: Send the Password via a Separate Method</h3>
-<p>If you send an email with a link to your encrypted document, it doesn’t make sense to put the password into that email. Additionally, you might not want to send the password from your account to that same account. Try to send the password over iMessage, Signal, or another instant messenger, or to a secondary email address the person has.</p>
-<p>This would be a good time to send them the <a href="http://cantus.us/posts/decrypt-tax-docs.html">decryption instructions</a> if they need some help.</p>
-<h3 id="step-6-the-takedown">Step 6: The Takedown</h3>
-<p>Once the recipient has confirmed that they have the documents and have decrypted them on their own machine you will remove the encrypted documents from DropBox. Sure they are safe, but there is no reason to keep that online.</p>
-<p><em>Sable</em></p>
-<hr />
-<p><em>You can use any temporary online storage solution you have access to in order to send the file, but sending via email attachment will ensure that your encrypted file is available permanently for offline attacks</em></p>
-<p>*Use openssl from the cli: <code>openssl rand -base64 12</code></p>
-            </div>
+      <div class="row">
+        <div class="span12">
+          <h1 id="encrypt-your-tax-docs-before-you-send-them">
+            Encrypt Your Tax Docs BEFORE You Send Them
+          </h1>
+          <p>
+            It’s that time. We all are doing our taxes online now. Some of us
+            need some help and that usually ends up with digitally sending tax
+            documents.
+          </p>
+          <p>
+            <em
+              >Do not ever, under any circumstance, email a document that has
+              your SSN, home address, phone number, bank information, etc.
+              unencrypted. That is a good way to lose all of your money and
+              even your identity.</em
+            >
+          </p>
+          <p>
+            I use two free services to send my encrypted documents out:
+            AESCrypt and Dropbox. You can use any online file sharing service
+            for this for this step such as Google Drive, OneDrive, sync, etc.
+          </p>
+          <h3 id="step-1-install-aescrypt">Step 1: Install AESCrypt</h3>
+          <p>
+            Get AESCrypt installed on your computer. Go
+            <a href="https://www.aescrypt.com">here</a> and install for your
+            platform.
+          </p>
+          <h3 id="step-2-zip-up-all-of-those-files">
+            Step 2: Zip up all of those files
+          </h3>
+          <p>
+            You want to send one encrypted blob of data. Put all of your files
+            into a single folder and zip that up. On the Mac, select the file
+            and go to File &gt;&gt; Compress “Sensitive Docs”.
+          </p>
+          <h3 id="step-3-encrypt">Step 3: Encrypt</h3>
+          <p>
+            Follow the directions for your platform to encrypt your zip file.
+            On the Mac, drag the file onto the dock icon and enter a strong
+            password when prompted.
+          </p>
+          <p>
+            I suggest using a secure password generator like the one over at
+            <a href="https://www.grc.com/passwords.htm">GRC.com</a>. You can
+            also use Lastpass or whatever you use (even the commandline) to
+            manage your passwords. Make a note of that password though. You can
+            keep a copy of the password in TextEdit or NVAlt – the documents
+            are already on your computer.
+          </p>
+          <p>
+            Steve Gibson recommended, on the
+            <a href="https://www.grc.com/sn/sn-599.htm">Security Now Podcast</a
+            >, to use a long string of numbers that can easily be read over the
+            phone such as, “32 67 89 14 75 12 99”, etc.
+          </p>
+          <h3
+            id="step-4-drop-it-in-dropbox-using-dropbox-makes-sharing-files-easy.-put-the-encrypted-file-into-your-dropbox-folder-and-click-share-link."
+          >
+            Step 4: Drop it in Dropbox Using Dropox makes sharing files easy.
+            Put the encrypted file into your dropbox folder and click Share
+            Link.
+          </h3>
+          <p>
+            You can send them the file directly through the Dropbox website or
+            get the link and send it separately.
+          </p>
+          <h3 id="step-5-send-the-password-via-a-separate-method">
+            Step 5: Send the Password via a Separate Method
+          </h3>
+          <p>
+            If you send an email with a link to your encrypted document, it
+            doesn’t make sense to put the password into that email.
+            Additionally, you might not want to send the password from your
+            account to that same account. Try to send the password over
+            iMessage, Signal, or another instant messenger, or to a secondary
+            email address the person has.
+          </p>
+          <p>
+            This would be a good time to send them the
+            <a href="http://cantus.us/posts/decrypt-tax-docs.html"
+              >decryption instructions</a
+            >
+            if they need some help.
+          </p>
+          <h3 id="step-6-the-takedown">Step 6: The Takedown</h3>
+          <p>
+            Once the recipient has confirmed that they have the documents and
+            have decrypted them on their own machine you will remove the
+            encrypted documents from Dropbox. Sure they are safe, but there is
+            no reason to keep that online.
+          </p>
+          <p><em>Sable</em></p>
+          <hr />
+          <p>
+            <em
+              >You can use any temporary online storage solution you have
+              access to in order to send the file, but sending via email
+              attachment will ensure that your encrypted file is available
+              permanently for offline attacks</em
+            >
+          </p>
+          <p>
+            *Use openssl from the cli: <code>openssl rand -base64 12</code>
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
