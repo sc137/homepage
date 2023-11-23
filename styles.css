@@ -1,0 +1,58 @@
+html {
+    height: 100%;
+}
+body {
+    position: relative;
+    background-color: rgb(238, 238, 238);
+    color: rgb(28, 28, 28);
+    line-height: 1.5;
+    font-family: Consolas, Monaco, monospace;
+    min-height: 100%;
+}
+a {
+    color: #0bc;
+    text-decoration: none;
+}
+a:hover {
+    background-color: rgba(208, 198, 198, 0.5);
+    /* padding: 2px 4px; */
+    border-radius: 4px;
+}
+.cmd {
+    color: rgba(15, 15, 15, 0.5);
+}
+.prompt {
+    color: rgba(255, 0, 0, 0.8);
+}
+.wrap {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.signature {
+    font-family: cursive;
+    font-size: 1.5em;
+}
+footer {
+    bottom: 0;
+    position: relative;
+    margin-top: 25px;
+    padding-bottom: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(28, 28, 28);
+        color: rgb(238, 238, 238);
+    }
+    .cmd {
+        color: #009966;
+    }
+    a {
+        color: #009966;
+    }
+    a:hover {
+        background-color: rgb(38, 38, 38);
+    }
+}
