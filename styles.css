@@ -15,7 +15,6 @@ a {
 }
 a:hover {
     background-color: rgba(208, 198, 198, 0.5);
-    /* padding: 2px 4px; */
     border-radius: 4px;
 }
 .cmd {
@@ -46,11 +45,12 @@ footer {
         background-color: rgb(28, 28, 28);
         color: rgb(238, 238, 238);
     }
-    .cmd {
-        color: #009966;
+    .cmd,
+    .prompt {
+        color: RGBA(0, 153, 102, 0.7);
     }
     a {
-        color: #009966;
+        color: RGBA(0, 153, 102, 0.9);
     }
     a:hover {
         background-color: rgb(38, 38, 38);
