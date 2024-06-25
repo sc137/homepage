@@ -10,7 +10,7 @@ body {
     min-height: 100%;
 }
 a {
-    color: #0bc;
+    color: rgba(30, 8, 227, 0.631);
     text-decoration: none;
 }
 a:hover {
@@ -47,10 +47,10 @@ footer {
     }
     .cmd,
     .prompt {
-        color: RGBA(0, 153, 102, 0.7);
+        color: rgba(92, 253, 92, 0.635);
     }
     a {
-        color: RGBA(0, 153, 102, 0.9);
+        color: rgba(92, 253, 92, 0.635);
     }
     a:hover {
         background-color: rgb(38, 38, 38);
