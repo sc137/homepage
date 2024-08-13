@@ -13,4 +13,4 @@ pandoc infile.md -o outfile.html \
 --css resources/template.css \
 -s
 
-add url to sitemap.txt (for bing and google)
+add url to sitemap.txt

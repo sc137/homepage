@@ -3,10 +3,10 @@ https://cantus.us/certs.html
 https://cantus.us/gif/animated_gif_terminal.gif
 https://cantus.us/index.html
 https://cantus.us/mtsac
+https://cantus.us/emeritus
 https://cantus.us/posts/decrypt-tax-docs.html
 https://cantus.us/posts/encrypt-tax-docs.html
 https://cantus.us/scores/jewish_scales.html
 https://cantus.us/stories/index.html
 https://cantus.us/tippy/index.html
 https://cantus.us/posts/practice.html
-https://cantus.us/posts/teaching-philosophy.html
