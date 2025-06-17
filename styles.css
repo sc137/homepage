@@ -23,8 +23,9 @@ a {
     text-decoration: none;
 }
 a:hover {
-    background-color: rgba(208, 198, 198, 0.5);
+    background-color: lightyellow;
     border-radius: 4px;
+    padding: 0 5px;
 }
 .cmd {
     color: rgba(15, 15, 15, 0.5);
@@ -70,7 +71,7 @@ footer small {
         color: rgba(92, 253, 92, 0.635);
     }
     a {
-        color: rgba(92, 253, 92, 0.635);
+        color: rgba(173, 216, 230, 0.684);
     }
     a:hover {
         background-color: rgb(38, 38, 38);
