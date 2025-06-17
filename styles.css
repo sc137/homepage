@@ -3,7 +3,7 @@ html {
 }
 body {
     position: relative;
-    background-color: rgb(238, 238, 238);
+    background-color: rgb(249, 249, 249);
     color: rgb(28, 28, 28);
     line-height: 1.6;
     font-family: Consolas, Monaco, monospace;
@@ -37,6 +37,10 @@ a:hover {
     max-width: 800px;
     margin: 0 auto;
     padding: 15px 0;
+}
+.courses{
+    font-size: large;
+    padding-left: 15px;
 }
 .signature {
     font-family: cursive;
