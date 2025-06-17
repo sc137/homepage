@@ -10,7 +10,6 @@ run this:
 
 pandoc infile.md -o outfile.html \
 --template resources/template.html \
---css resources/template.css \
 -s
 
 add url to sitemap.txt
