@@ -1,22 +1,30 @@
-html {
-    height: 100%;
+:root {
+  /* assign variables */
+  --main-dark-color: rgb(22, 22, 22);
+  --main-light-color: rgb(249, 249, 249);
 }
 body {
-    position: relative;
-    background-color: rgb(249, 249, 249);
-    color: rgb(28, 28, 28);
-    line-height: 1.6;
-    font-family: Consolas, Monaco, monospace;
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
-}
-main {
-    position: relative;
-    max-width: 800px;
     margin: 0 auto;
-    padding: 15px 0;
-    flex: 1;
+    display: grid;
+    background-color: var(--main-light-color);
+    color: var(--main-dark-color);
+    line-height: 1.6;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+    gap: 15px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+}
+header,
+main,
+footer {
+  grid-column: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Lora", 'Times New Roman', Times, serif;
 }
 a {
     color: rgba(30, 8, 227, 0.631);
@@ -33,38 +41,24 @@ a:hover {
 .prompt {
     color: rgba(255, 0, 0, 0.8);
 }
-.wrap {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 15px 0;
-}
 .courses{
     font-size: large;
     padding-left: 15px;
 }
 .signature {
-    font-family: cursive;
+    font-family: "Dancing Script", cursive;
     font-size: 1.5em;
 }
 footer {
-    margin: 0 auto;
-    max-width: 800px;
-    padding-bottom: 1em;
-    text-align: left;  
-    width: 100%;
-}
-footer small {
-    display: block;
-    text-align: left;
-    padding-left: 0;
+    font-size: 0.8em;
+    padding: 1em 0 1.2em 0;
 }
 
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: rgb(28, 28, 28);
-        color: rgb(238, 238, 238);
+        background-color: var(--main-dark-color);
+        color: var(--main-light-color);
     }
     .cmd,
     .prompt {
@@ -76,4 +70,17 @@ footer small {
     a:hover {
         background-color: rgb(38, 38, 38);
     }
+}
+@media screen and (max-width: 799px ) {
+    body {
+        padding: 0 1em;
+    }
+    
+}
+
+@media screen and (max-width: 600px ) {
+    body {
+        padding: 0 0.6em;
+    }
+    
 }
