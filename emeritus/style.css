@@ -1,0 +1,17 @@
+body {
+    margin: 1em 10em;
+    width: 70%;
+    margin: 0 auto;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+td:nth-child(1), th:nth-child(1) {
+    text-align: center;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", "Times New Roman", Times, serif;
+}
