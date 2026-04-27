@@ -9,3 +9,4 @@ https://cantus.us/stories/index.html
 https://cantus.us/posts/practice.html
 https://cantus.us/posts/decrypt-tax-docs.html
 https://cantus.us/posts/encrypt-tax-docs.html
+https://cantus.us/posts/secure-sharing.html

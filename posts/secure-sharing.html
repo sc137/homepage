@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why I Use Secure Links – cantus.us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      padding: 2rem 1.25rem 4rem;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* nav */
+    .site-nav {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .site-nav a { color: #1a5ca8; text-decoration: none; }
+    .site-nav a:hover { text-decoration: underline; }
+
+    /* headings */
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(22px, 5vw, 32px);
+      font-weight: 600;
+      line-height: 1.25;
+      margin-bottom: 0.35rem;
+      color: #111;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 2.25rem;
+      margin-bottom: 0.6rem;
+      color: #111;
+    }
+
+    h3 {
+      font-family: 'Lora', serif;
+      font-size: 16px;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+      color: #222;
+    }
+
+    .byline {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 1.75rem;
+      font-style: italic;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2rem 0;
+    }
+
+    p { margin-bottom: 1rem; }
+
+    a { color: #1a5ca8; }
+    a:hover { text-decoration: none; }
+
+    /* callouts */
+    .callout {
+      border-left: 3px solid #1a5ca8;
+      background: #f0f5fc;
+      padding: 0.85rem 1.1rem;
+      margin: 1.25rem 0;
+      font-size: 15px;
+      color: #1a3a6b;
+      line-height: 1.7;
+    }
+    .callout strong { font-weight: 500; }
+
+    .callout-warn {
+      border-left-color: #b45309;
+      background: #fdf6ec;
+      color: #7c3d0e;
+    }
+
+    /* comparison */
+    .compare {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    .ccard {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 0.9rem 1rem;
+    }
+    .ccard h3 {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      margin-top: 0;
+      margin-bottom: 0.65rem;
+      color: #555;
+    }
+    .ccard ul { list-style: none; padding: 0; margin: 0; }
+    .ccard ul li {
+      font-size: 14px;
+      color: #333;
+      padding: 3px 0;
+      line-height: 1.55;
+    }
+    .ccard-bad  ul li::before { content: '✗  '; color: #b91c1c; }
+    .ccard-good ul li::before { content: '✓  '; color: #166534; }
+
+    /* PII list */
+    .pii-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.4rem 2rem;
+      margin: 0.75rem 0 1.25rem;
+      padding: 0;
+      list-style: none;
+    }
+    .pii-list li {
+      font-size: 14.5px;
+      color: #333;
+      line-height: 1.6;
+    }
+    .pii-list li::before {
+      content: '→  ';
+      color: #888;
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+    }
+
+    /* steps */
+    .steps { padding: 0; list-style: none; margin: 0.75rem 0 1rem; }
+    .steps li {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 0.9rem;
+      align-items: flex-start;
+    }
+    .step-num {
+      min-width: 26px; height: 26px;
+      border-radius: 50%;
+      border: 1.5px solid #1a5ca8;
+      color: #1a5ca8;
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .steps li p { margin: 0; font-size: 15px; color: #222; line-height: 1.65; }
+    .steps li strong { font-weight: 500; }
+
+    /* FAQ */
+    .faq { margin: 0.75rem 0; }
+    .faq-item { margin-bottom: 1.1rem; }
+    .faq-item .q { font-weight: 500; color: #111; margin-bottom: 0.15rem; font-size: 15px; }
+    .faq-item .a { font-size: 14.5px; color: #444; line-height: 1.7; margin: 0; }
+
+    /* inline code */
+    code {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      background: #f4f4f4;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      padding: 1px 5px;
+      color: #333;
+    }
+
+    /* footer */
+    .page-footer {
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      color: #999;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+    .page-footer a { color: #666; text-decoration: none; }
+    .page-footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 520px) {
+      .compare, .pii-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="https://cantus.us">cantus.us</a>
+  </nav>
+
+  <h1>Why I Use Secure Links Instead of Plain Email</h1>
+  <p class="byline">A plain-language guide for anyone expecting a document from me — no tech background required.</p>
+
+  <hr />
+
+  <h2>The short version</h2>
+
+  <div class="callout">
+    Sending your Social Security Number or home address in a regular email is like mailing a <strong>postcard</strong> — anyone who handles it along the way can read what's written on it. A secure link or encrypted file is like a <strong>locked box</strong> that only you can open.
+  </div>
+
+  <div class="callout callout-warn">
+    Do not ever, under any circumstance, email a document that contains your <strong>SSN</strong>, <strong>home address</strong>, <strong>bank information</strong>, or other sensitive personal data unencrypted. That is a reliable way to lose your money — and your identity.
+  </div>
+
+  <h2>Plain email vs. secure sharing</h2>
+
+  <div class="compare">
+    <div class="ccard ccard-bad">
+      <h3>Plain email</h3>
+      <ul>
+        <li>Travels through many servers you don't control</li>
+        <li>Can be intercepted or forwarded by accident</li>
+        <li>Sits in inboxes indefinitely — yours and mine</li>
+        <li>No way to take it back once sent</li>
+        <li>One wrong address = data breach</li>
+      </ul>
+    </div>
+    <div class="ccard ccard-good">
+      <h3>Encrypted / secure link</h3>
+      <ul>
+        <li>Scrambled in transit — unreadable if intercepted</li>
+        <li>Password-protected so only you can open it</li>
+        <li>Link can expire automatically</li>
+        <li>Access can be revoked after use</li>
+        <li>Leaves an audit trail of who viewed it</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>What information this protects</h2>
+
+  <ul class="pii-list">
+    <li>Social Security numbers (SSN / EIN)</li>
+    <li>Driver's license and ID numbers</li>
+    <li>Home addresses and phone numbers</li>
+    <li>Date of birth and personal identifiers</li>
+    <li>Bank account and routing numbers</li>
+    <li>Signed forms such as W-9s, I-9s, contracts</li>
+  </ul>
+
+  <hr />
+
+  <h2>How to open what I send you</h2>
+
+  <ol class="steps">
+    <li>
+      <span class="step-num">1</span>
+      <p>You will receive an email with a <strong>link or an attached file</strong> — not the document sitting open in the message body.</p>
+    </li>
+    <li>
+      <span class="step-num">2</span>
+      <p>Click the link or open the file. You may be asked for a <strong>password I'll send separately</strong> — often by text or phone call — so that the password never travels alongside the file.</p>
+    </li>
+    <li>
+      <span class="step-num">3</span>
+      <p>Download, review, or complete the document as normal. <strong>The link may expire</strong> after a set time — let me know if you need it resent.</p>
+    </li>
+  </ol>
+
+  <hr />
+
+  <h2>Common questions</h2>
+
+  <div class="faq">
+    <div class="faq-item">
+      <p class="q">Is the link safe to click?</p>
+      <p class="a">Yes — I will always let you know in advance that something is coming. If you are unsure, call me before clicking. I will never ask you to log in to an unexpected site or enter payment information.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Why can't you just attach a regular PDF?</p>
+      <p class="a">A PDF attached to a regular email is just as exposed as the email itself. Encryption is what makes the difference — not the file format. A <code>.pdf</code> is not a secure container.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">What if I need to send documents back to you?</p>
+      <p class="a">Please don't reply with sensitive documents attached to a plain email. Ask me for a secure upload link and I'll send one — the same protection works in both directions.</p>
+    </div>
+    <div class="faq-item">
+      <p class="q">Why does the password come separately?</p>
+      <p class="a">If the password and the encrypted file travel together in the same email, an interceptor gets everything they need. Sending the password via a different channel — a text message, phone call, or a secondary email address — means both pieces must be compromised independently.</p>
+    </div>
+  </div>
+
+  <hr />
+
+  <h2>The legal side</h2>
+
+  <p>Protecting your personal information is my responsibility — not just a preference. IRS guidelines, general data privacy best practices, and basic professional standards all require that sensitive information be handled this way. When I ask you to use a secure link or encrypted file, it means I'm taking that responsibility seriously.</p>
+
+  <p><em>— Sable</em></p>
+
+  <footer class="page-footer">
+    <a href="https://cantus.us">← cantus.us</a>
+  </footer>
+
+</body>
+</html>
