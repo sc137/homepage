@@ -1,200 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sable Cantus – Musician</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <head>
+    body {
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #222;
+      background: #fff;
+      padding: 2rem 1.25rem 4rem;
+      max-width: 760px;
+      margin: 0 auto;
+    }
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Personal website for Sable Cantus">
-    <meta name="author" content="Sable Cantus">
+    /* nav */
+    .site-nav {
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      margin-bottom: 2rem;
+      color: #555;
+    }
+    .site-nav a { color: #1a5ca8; text-decoration: none; }
+    .site-nav a:hover { text-decoration: underline; }
 
-    <title>Sable Cantus</title>
+    /* headings */
+    h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(24px, 5vw, 34px);
+      font-weight: 600;
+      line-height: 1.2;
+      color: #111;
+      margin-bottom: 0.25rem;
+    }
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #111;
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    h3 {
+      font-family: 'Lora', serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: #222;
+      margin-top: 1.5rem;
+      margin-bottom: 0.35rem;
+    }
 
-    <!-- Custom styles for this template -->
-    <link href="css/one-page-wonder.min.css" rel="stylesheet">
+    p { margin-bottom: 1rem; }
+    p:last-child { margin-bottom: 0; }
 
-  </head>
+    a { color: #1a5ca8; }
+    a:hover { text-decoration: none; }
 
-  <body>
+    em { font-style: italic; }
+    strong { font-weight: 500; }
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Sable Cantus</a>
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-<!--
-            <li class="nav-item">
-              <a class="nav-link" href="#"> </a><a href="https://twitter.com/sablecantus" target="_blank"><img src="img/twitter.png" alt="twitter logo" height="30" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);"></a>
-            &nbsp;&nbsp;
-            </li>
-			
-            <li class="nav-item">
-			  <a class="nav-link" href="#"></a> <a href="http://sc137.github.io/tippy/" target="_blank"><img src="img/tippy.png" alt="tippy logo" height="30" title="Give good tips with Tippy!" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);"></a>
-			  &nbsp;&nbsp;
-            </li>
-            <li class="nav-item">
-			  <a class="nav-link" href="#"></a> <a href="https://theindispensableshow.com/" target="_blank"><img src="img/tis_logo.png" alt="podcast logo" height="30" style="-webkit-filter: grayscale(100%);filter: grayscale(100%);"></a>
-            </li>
--->
-          </ul>
-        </div>
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2.25rem 0;
+    }
+
+    /* tagline */
+    .tagline {
+      font-size: 15px;
+      color: #555;
+      font-style: italic;
+      margin-bottom: 2rem;
+    }
+
+    /* hero photo */
+    .hero-photo {
+      width: 100%;
+      max-height: 420px;
+      object-fit: cover;
+      border-radius: 4px;
+      display: block;
+      margin: 1.5rem 0 2rem;
+      background: #f0f0f0;
+    }
+
+    /* photo placeholder */
+    .photo-placeholder {
+      width: 100%;
+      background: #f5f5f5;
+      border: 1px dashed #bbb;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      padding: 2.5rem 1rem;
+      margin: 1.25rem 0;
+      color: #888;
+    }
+    .photo-placeholder .ph-label {
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      color: #aaa;
+    }
+    .photo-placeholder .ph-title {
+      font-size: 14px;
+      color: #666;
+      font-weight: 500;
+    }
+
+    /* photo grid */
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin: 1.25rem 0;
+    }
+    .photo-grid .photo-placeholder {
+      margin: 0;
+      min-height: 180px;
+    }
+    .photo-grid img {
+      width: 100%;
+      height: 220px;
+      border-radius: 4px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* caption */
+    .caption {
+      font-size: 13px;
+      color: #888;
+      font-style: italic;
+      margin-top: -0.5rem;
+      margin-bottom: 1rem;
+    }
+    figcaption {
+        font-size: 13px;
+        color: #888;
+        font-style: italic;
+        margin-top: 0.4rem;
+    }
+
+    /* links list (social / streaming) */
+    .link-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1.5rem;
+      margin: 0.75rem 0 1rem;
+    }
+    .link-list li {
+      font-size: 14.5px;
+    }
+    .link-list li::before {
+      content: '→ ';
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      color: #888;
+    }
+
+    /* contact / booking note */
+    .contact-note {
+      background: #f7f7f7;
+      border-left: 3px solid #ccc;
+      padding: 0.85rem 1.1rem;
+      font-size: 14.5px;
+      color: #444;
+      margin: 1.5rem 0;
+      line-height: 1.7;
+    }
+    .contact-note a { color: #1a5ca8; }
+
+    .with-preview {
+        position: relative;
+    }
+
+    .link-preview {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 1.75rem;
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        z-index: 10;
+    }
+
+    .with-preview:hover .link-preview {
+        display: block;
+    }
+
+    .album-art {
+        width: 200px;
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 4px;
+        border: 1px solid #ddd;
+        display: block;
+        margin: 0.75rem 0 1rem;
+    }
+
+    /* footer */
+    .page-footer {
+      font-family: 'Fira Code', monospace;
+      font-size: 12px;
+      color: #999;
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .page-footer a { color: #666; text-decoration: none; }
+    .page-footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 520px) {
+      .photo-grid { grid-template-columns: 1fr; }
+      .link-list { flex-direction: column; gap: 0.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <a href="https://cantus.us">cantus.us</a>
+  </nav>
+
+  <h1>Sable Cantus</h1>
+  <p class="tagline">Guitarist · Trombonist · Singer · Orange County, CA</p>
+
+  <img src="img/sable-strat.png" class="hero-photo">
+
+  <hr />
+
+  <h2>About Sable</h2>
+
+  <p>Sable is a musician based in Orange County, CA. He plays guitar and trombone, sings, and has a long history of performing at venues, concerts, and community events across the Los Angeles and Orange County area.</p>
+
+  <p>His projects span klezmer and Jewish folk music with the South Coast Simcha Band, parody recordings, acoustic duo work, and live performances at venues from Fashion Island to synagogue concerts.</p>
+
+  <p>Sable was a trombone player in the US Army from 1997 to 2002. Sable completed his M.A. in Music from CSU Los Angeles in 2004.</p>
+
+  <hr />
+
+  <h2>The South Coast Simcha Band</h2>
+
+  <img src="img/klez.jpg" class="" alt="The South Coast Simcha Band" width="">
+  
+  <p>Sable plays trombone, guitar, and sings Yiddish and Hebrew with the <strong>South Coast Simcha Band</strong>, a klezmer ensemble performing at city concerts, festivals, and private events throughout Los Angeles and Orange County.</p>
+
+  <p>We would love to play for your simcha, bar/bat mitzvah, or temple event.</p>
+
+  <ul class="link-list">
+    <li><a href="https://www.facebook.com/simchaband/">South Coast Simcha Band on Facebook</a></li>
+  </ul>
+
+  <div class="contact-note">
+    Interested in booking the band? Reach out via the <a href="https://www.facebook.com/simchaband/">Facebook page</a>.
+  </div>
+
+  <hr>
+
+  <h2>Live</h2>
+
+  <p>Some photos from live events.</p>
+
+  <div class="photo-grid">
+    <div>
+      <figure>
+        <img src="img/jazz_and_rock_band.jpg" alt="Jazz & Rock Band">
+        <figcaption>Jazz & Rock Band entertaining at Mile Square Park Golf Course, 2026</figcaption>
+      </figure>
       </div>
-    </nav>
+      <div>
+      <figure>
+        <img src="img/july4.jpeg" alt="July 4th Parade band in HB" />
+        <figcaption>July 4th Parade Band in Huntington Beach</figcaption>
+      </figure>
+    </div>
+    <div>
+      <figure>
+        <img src="img/recording-session.jpeg" alt="Recording session" />
+        <figcaption>Recording session in progress</figcaption>
+      </figure>
+    </div>
+    <div>
+        <figure>
+            <img src="img/simchat-torah.jpeg" alt="Sable & Renah">
+            <figcaption>Sable and Renah playing for Simchat Torah</figcaption>
+        </figure>
+    </div>
+    <div>
+      <figure>
+        <img src="img/fashion_island_2018.jpg" alt="Sable and Perry at Fashion Island, 2018" />
+        <figcaption>Fashion Island, 2018 — with Perry</figcaption>
+      </figure>
+    </div>
+    <div>
+      <figure>
+        <img src="img/beach.jpg" alt="Sable playing acoustic guitar with Nancy Linder" />
+        <figcaption>Acoustic set with Nancy Linder at the beach</figcaption>
+      </figure>
+    </div>
+    <div>
+      <figure>
+        <img src="img/jor.jpg" alt="Jamming Out 2019" />
+        <figcaption>Jews of Rock Concert, 2019</figcaption>
+        </figure>
+    </div>
+    <div>
+        <figure>
+            <img src="img/2019concert.jpg" alt="Cantor's Concert 2019" />
+            <figcaption>Cantor's Concert, 2019</figcaption>
+        </figure>
+    </div>
+  </div>
 
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/sable-strat.png" alt="sable playing guitar" title="sable playing his hot-rodded creamy strat">
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">About</h2>
-	      <p>Sable is musician in Orange County, CA. You can find me playing guitar, trombone, working on podcasts, parody songs, demo recordings, or other creative projects.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <hr />
+
+    <h2>Listen</h2>
+
+  <h3>Heaven is Open Over Me – Leah Tillema</h3>
+  <a href="https://open.spotify.com/album/3beztv6wceIdJ492GyREXV?si=2FGxp0yDTjuGqNbJAHtMVQ" target="_blank" title="Click to open on spotify">
+  <img src="img/heaven.png" class="album-art" alt="heaven is open over me">
+  </a>
+
+  <p>Sable performed and recorded the instrumentation for Leah's voice and song. <a href="https://open.spotify.com/album/3beztv6wceIdJ492GyREXV?si=2FGxp0yDTjuGqNbJAHtMVQ" target="_blank" title="Click to open on spotify">Check it out on spotify</a>.</p>
+
+  <h3>Sarcastic Ladyland</h3>
+  <a href="https://sablecantus.bandcamp.com/album/sarcastic-ladyland" title="click to listen on bandcamp">
+  <img src="img/Sarcastic-Ladyland.jpg" class="album-art" alt="Sarcastic Ladyland">
+  </a>
+
+  <p>Sarcastic Ladyland is Sable and Dave's parody project. Check out the catalog on Bandcamp for big laughs.</p>
+
+  <ul class="link-list">
+    <li><a href="https://sablecantus.bandcamp.com/album/sarcastic-ladyland">Sarcastic Ladyland on Bandcamp</a></li>
+  </ul>
+
+  <!-- <hr /> -->
+
+  
+  <!-- <ul class="link-list"> -->
     
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="p-5">
-              <a href="https://theindispensableshow.com" target="_blank"><img class="img-fluid rounded-circle" src="img/tis_logo.png" alt=""></a>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-5">
-              <h2 class="display-4">The Indispensable Show</h2>
-	      <p>Another podcast launch with Dave Smith. Visit the <a href="https://theindispensableshow.com" target="_blank">podcast website</a> to listen and subscribe.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- add Spotify, YouTube, SoundCloud, Apple Music links here as you have them -->
+  <!-- </ul> -->
 
-    <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/klez.jpg" alt="the south coast simcha band" title="Check out our klezmer band - the South Coast Simcha Band!">
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
-              <h2 class="display-4">Klezmer!</h2>
-  <p>Sable plays trombone and sings yiddish/hebrew with the South Coast Simcha Band. You can hear us at local city concerts in and around Los Angeles and Orange Count. Check us out on <a href="https://www.facebook.com/simchaband/" target="_blank">Facebook</a><br /><br />We would <strong>love</strong> to play Klezmer for your simcha, bar mitzvah, or other temple event!</p> </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-        <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/Sarcastic-Ladyland.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-5">
-              <h2 class="display-4">Sarcastic Ladyland</h2>
-	      <p>Please check out some of our fine parody work <a href="https://sablecantus.bandcamp.com/album/sarcastic-ladyland" target="_blank">on bandcamp</a> </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-        <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 order-lg-2">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/fashion_island_2018.jpg" alt="perry and sable at fashion island">
-            </div>
-          </div>
-          <div class="col-lg-6 order-lg-1">
-            <div class="p-5">
+  <p><em>— Sable</em></p>
 
-  <p>Sable and Perry playing and singing at Fashion Island in 2018.</p> </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-        <section>
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6">
-            <div class="p-5">
-              <img class="img-fluid rounded-circle" src="img/beach.jpg" alt="sable and nancy singing and playing">
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="p-5">
-	      <p>Sable playing acoustic guitar and singing with Nancy Linder.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-    <section>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-10 offset-1.5 order-lg-1">
-                    <div class="p-5">
-                    <h3 class="display-4"><br />Jamming Out 2019</h3>
-                    <img src="img/jor.jpg" width="90%">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-	
-    <section>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-10 offset-1.5 order-lg-1">
-                    <div class="p-5">
-                    <h3 class="display-4"><br />Cantor's Concert 2019</h3>
-                    <img src="img/2019concert.jpg" width="90%">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <footer class="page-footer">
+    <a href="https://cantus.us">← cantus.us</a>
+    <span>© Sable Cantus. All rights reserved.</span>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="py-5 bg-black">
-      <div class="container">
-        <p class="m-0 text-center text-white small">Copyright &copy; 2019 Sable Cantus. All Rights Reserved. </p>
-      </div>
-      <!-- /.container -->
-    </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  </body>
-
+</body>
 </html>
