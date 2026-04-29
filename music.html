@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
   <title>Sable Cantus – Musician</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -235,6 +236,72 @@
     @media (max-width: 520px) {
       .photo-grid { grid-template-columns: 1fr; }
       .link-list { flex-direction: column; gap: 0.4rem; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: rgb(22, 22, 22);
+        color: rgb(249, 249, 249);
+      }
+      h1, h2 {
+        color: #fff;
+      }
+      h3 {
+        color: rgb(249, 249, 249);
+      }
+      a {
+        color: rgba(173, 216, 230, 0.8);
+      }
+      a:hover {
+        background-color: rgb(38, 38, 38);
+      }
+      .site-nav {
+        color: #bbb;
+      }
+      .site-nav a, .page-footer a, .contact-note a {
+        color: rgba(173, 216, 230, 0.8);
+      }
+      hr {
+        border-top: 1px solid #444;
+      }
+      .tagline {
+        color: #bbb;
+      }
+      .hero-photo {
+        background: #333;
+      }
+      .photo-placeholder {
+        background: #2a2a2a;
+        border-color: #555;
+        color: #ccc;
+      }
+      .photo-placeholder .ph-label {
+        color: #888;
+      }
+      .photo-placeholder .ph-title {
+        color: #eee;
+      }
+      .caption, figcaption {
+        color: #bbb;
+      }
+      .link-list li::before {
+        color: #bbb;
+      }
+      .contact-note {
+        background: #2a2a2a;
+        border-left: 3px solid #555;
+        color: #eee;
+      }
+      .link-preview, .album-art {
+        border-color: #444;
+      }
+      .page-footer {
+        color: #888;
+        border-top: 1px solid #333;
+      }
+      .page-footer a {
+        color: rgba(173, 216, 230, 0.8);
+      }
     }
   </style>
 </head>

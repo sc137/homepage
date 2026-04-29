@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
   <title>Why I Use Secure Links – cantus.us</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -201,6 +202,45 @@
 
     @media (max-width: 520px) {
       .compare, .pii-list { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: rgb(22, 22, 22);
+        color: rgb(249, 249, 249);
+      }
+      h1, h2 { color: #fff; }
+      h3, .steps li p, .faq-item .q, .pii-list li, .ccard ul li, .faq-item .a { color: #e0e0e0; }
+      .site-nav { color: #bbb; }
+      a, .site-nav a, .page-footer a { color: rgba(173, 216, 230, 0.8); }
+      a:hover { background-color: rgb(38, 38, 38); }
+      .byline { color: #bbb; }
+      hr { border-top-color: #444; }
+      .callout {
+        background: #1c2a3d;
+        border-left-color: #4fa5ff;
+        color: #b9d8ff;
+      }
+      .callout-warn {
+        background: #3d2613;
+        border-left-color: #e07b22;
+        color: #ffce9f;
+      }
+      .ccard { border-color: #444; }
+      .ccard h3 { color: #aaa; }
+      .ccard-bad ul li::before { color: #ef4444; }
+      .ccard-good ul li::before { color: #4ade80; }
+      .pii-list li::before { color: #aaa; }
+      .step-num { border-color: #4fa5ff; color: #4fa5ff; }
+      code {
+        background: #2a2a2a;
+        border-color: #444;
+        color: #e0e0e0;
+      }
+      .page-footer {
+        color: #888;
+        border-top-color: #333;
+      }
     }
   </style>
 </head>
