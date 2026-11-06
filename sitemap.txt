@@ -10,3 +10,5 @@ https://cantus.us/posts/practice.html
 https://cantus.us/posts/decrypt-tax-docs.html
 https://cantus.us/posts/encrypt-tax-docs.html
 https://cantus.us/posts/secure-sharing.html
+https://cantus.us/notes/
+https://cantus.us/projects/
