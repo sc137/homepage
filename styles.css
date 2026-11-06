@@ -160,3 +160,12 @@ audio { width: 100%; max-width: 530px; }
   .tui-titlebar-end { display: none; }
   .score-frame iframe { min-height: 380px; }
 }
+
+/* Compact single-row navigation, with readable labels and accessible full names. */
+.site-nav .nav-short { display: none; }
+@media (max-width: 600px) {
+  .site-nav { flex-wrap: nowrap; white-space: nowrap; font-size: clamp(11px, 3.2vw, 12px); gap: clamp(3px, 1vw, 5px); }
+  .site-nav a { display: inline-flex; align-items: center; min-height: 32px; }
+  .site-nav .nav-full { display: none; }
+  .site-nav .nav-short { display: inline; }
+}
