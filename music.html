@@ -28,9 +28,12 @@
       font-size: 13px;
       margin-bottom: 2rem;
       color: #555;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem 1.1rem;
     }
     .site-nav a { color: #1a5ca8; text-decoration: none; }
-    .site-nav a:hover { text-decoration: underline; }
+    .site-nav a:hover, .site-nav a[aria-current="page"] { text-decoration: underline; }
 
     /* headings */
     h1 {
@@ -307,8 +310,14 @@
 </head>
 <body>
 
-  <nav class="site-nav">
-    <a href="https://cantus.us">cantus.us</a>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="">home</a>
+    <a href="msac/">msac</a>
+    <a href="emeritus/">emeritus</a>
+    <a href="projects/">projects</a>
+    <a href="notes/">notes</a>
+    <a href="music.html" aria-current="page">music</a>
+    <a href="certs.html">credentials</a>
   </nav>
 
   <h1>Sable Cantus</h1>
