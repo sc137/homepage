@@ -220,22 +220,6 @@
         margin: 0.75rem 0 1rem;
     }
 
-    /* footer */
-    .page-footer {
-      font-family: 'Fira Code', monospace;
-      font-size: 12px;
-      color: #999;
-      margin-top: 3rem;
-      padding-top: 1rem;
-      border-top: 1px solid #eee;
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-    }
-    .page-footer a { color: #666; text-decoration: none; }
-    .page-footer a:hover { text-decoration: underline; }
-
     @media (max-width: 520px) {
       .photo-grid { grid-template-columns: 1fr; }
       .link-list { flex-direction: column; gap: 0.4rem; }
@@ -261,7 +245,7 @@
       .site-nav {
         color: #bbb;
       }
-      .site-nav a, .page-footer a, .contact-note a {
+      .site-nav a, .contact-note a {
         color: rgba(173, 216, 230, 0.8);
       }
       hr {
@@ -298,13 +282,7 @@
       .link-preview, .album-art {
         border-color: #444;
       }
-      .page-footer {
-        color: #888;
-        border-top: 1px solid #333;
-      }
-      .page-footer a {
-        color: rgba(173, 216, 230, 0.8);
-      }
+
     }
 
 /* Compact single-row navigation, with readable labels and accessible full names. */
@@ -326,6 +304,7 @@
 }
 
   </style>
+  <link rel="stylesheet" href="footer.css">
 </head>
 <body>
 
@@ -469,8 +448,8 @@
   <p><em>— Sable</em></p>
 
   <footer class="page-footer">
-    <a href="https://cantus.us">← cantus.us</a>
-    <span>© Sable Cantus. All rights reserved.</span>
+    <p><a href="./">cantus.us</a> · &copy; 2026 Sable Cantus</p>
+    <p class="last-updated">Last updated: <time datetime="2026-11-06">November 6, 2026</time></p>
   </footer>
 
 </body>

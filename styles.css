@@ -2,6 +2,8 @@
    /msac, /emeritus, and music.html intentionally retain their own styles. */
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&family=Lora:wght@400;600&display=swap");
 
+@import url("footer.css");
+
 :root {
   color-scheme: light dark;
   --background: #fafaf8;
@@ -91,11 +93,6 @@ blockquote { border-left: 3px solid var(--rule); margin: 1.5rem 0; padding: .2re
 .entry-list p { color: var(--muted); font-size: .95rem; margin: .2rem 0 0; }
 .byline, .eyebrow { font-size: .8rem; color: var(--muted); }
 .signature { font-family: "Dancing Script", cursive; font-size: 1.8rem; }
-.page-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: .78rem; margin-top: 3.5rem; padding-top: 1rem; }
-.page-footer p { margin: 0 0 .5rem; }
-.page-footer a { color: var(--link); }
-.page-footer code { font-size: inherit; }
-.page-footer .last-updated { margin-top: .75rem; font-size: .75rem; }
 .toc { padding: .9rem 1rem; border-left: 2px solid var(--rule); margin: 1.5rem 0; }
 .toc ul { margin: .4rem 0; }
 

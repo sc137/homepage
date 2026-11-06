@@ -1,0 +1,27 @@
+/* Shared footer for site pages, including the independently styled music page. */
+.page-footer {
+  border-top: 1px solid var(--rule, #d8dcda);
+  color: var(--muted, #626a66);
+  font: .78rem/1.7 "Fira Code", ui-monospace, SFMono-Regular, Consolas, monospace;
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+}
+.page-footer p { margin: 0 0 .5rem; }
+.page-footer a { color: var(--link, #225c89); text-underline-offset: .16em; }
+.page-footer code { font-size: inherit; }
+.page-footer .last-updated { margin-top: .75rem; font-size: .75rem; }
+@media (min-width: 700px) {
+  .page-footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: .5rem 1rem;
+    align-items: baseline;
+  }
+  .page-footer p { margin: 0; }
+  .page-footer .last-updated { grid-column: 2; grid-row: 1; margin: 0; }
+  .page-footer .public-key { grid-column: 1 / -1; grid-row: 2; }
+}
+@media (prefers-color-scheme: dark) {
+  .page-footer { border-color: var(--rule, #3b4440); color: var(--muted, #aab3ae); }
+  .page-footer a { color: var(--link, #9fceef); }
+}
