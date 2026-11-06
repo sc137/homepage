@@ -1,88 +1,133 @@
+/* Cantus.us: shared styles for the homepage, notes, projects, posts, and credentials.
+   /msac, /emeritus, and music.html intentionally retain their own styles. */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600&family=Lora:wght@400;600&display=swap");
+
 :root {
-  /* assign variables */
-  --main-dark-color: rgb(22, 22, 22);
-  --main-light-color: rgb(249, 249, 249);
+  color-scheme: light dark;
+  --background: #fafaf8;
+  --foreground: #232524;
+  --muted: #626a66;
+  --link: #225c89;
+  --accent: #a74630;
+  --rule: #d8dcda;
+  --soft: #f0f2f1;
+  --code: #e9eeed;
+  --panel: #ffffff;
+  --good: #276945;
+  --warning: #9b6019;
 }
-body {
-    margin: 0 auto;
-    display: grid;
-    background-color: var(--main-light-color);
-    color: var(--main-dark-color);
-    line-height: 1.6;
-    font-family: "Inter", Arial, sans-serif;
-    font-size: 18px;
-    min-height: 100vh;
-    gap: 15px;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
-    max-width: 800px;
-}
-header,
-main,
-footer {
-  grid-column: 1;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Lora", 'Times New Roman', Times, serif;
-}
-a {
-    color: rgba(30, 8, 227, 0.631);
-    text-decoration: none;
-}
-a:hover {
-    background-color: lightyellow;
-    border-radius: 4px;
-    /* padding: 0 5px; */
-}
-.cmd {
-    color: rgba(15, 15, 15, 0.5);
-}
-.prompt {
-    color: rgba(255, 0, 0, 0.8);
-}
-.courses{
-    font-size: large;
-    padding-left: 15px;
-}
-.signature {
-    font-family: "Dancing Script", cursive;
-    font-size: 1.5em;
-}
-footer {
-    font-size: 0.8em;
-    padding: 1em 0 1.2em 0;
-}
-
-
 @media (prefers-color-scheme: dark) {
-    body {
-        background-color: var(--main-dark-color);
-        color: var(--main-light-color);
-    }
-    .cmd,
-    .prompt {
-        color: rgba(92, 253, 92, 0.635);
-    }
-    a {
-        color: rgba(173, 216, 230, 0.684);
-    }
-    a:hover {
-        background-color: rgb(38, 38, 38);
-    }
-    
-    
+  :root {
+    --background: #171a1a;
+    --foreground: #ebeeec;
+    --muted: #aab3ae;
+    --link: #9fceef;
+    --accent: #e6a37e;
+    --rule: #3b4440;
+    --soft: #232b28;
+    --code: #28322e;
+    --panel: #1c2220;
+    --good: #91d6aa;
+    --warning: #f0bf82;
+  }
 }
-@media screen and (max-width: 799px ) {
-    body {
-        padding: 0 1em;
-    }
-    
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  max-width: 800px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 0 1.4rem 2rem;
+  background: var(--background);
+  color: var(--foreground);
+  font: 1.05rem/1.7 "Inter", system-ui, sans-serif;
 }
+main { min-height: 40vh; }
+h1, h2, h3, h4 {
+  font-family: "Lora", Georgia, serif;
+  line-height: 1.25;
+  letter-spacing: -0.012em;
+}
+h1 { font-size: clamp(2rem, 5.5vw, 2.9rem); margin: 0 0 .6rem; }
+h2 { font-size: clamp(1.4rem, 4vw, 1.7rem); margin: 2.1rem 0 .7rem; }
+h3 { font-size: 1.2rem; margin: 1.8rem 0 .5rem; }
+p { margin: 0 0 1.1rem; }
+ul, ol { padding-left: 1.5rem; }
+li { margin-bottom: .4rem; }
+a { color: var(--link); text-underline-offset: .16em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 2rem 0; }
+img, video { max-width: 100%; height: auto; }
+iframe { max-width: 100%; }
+pre { padding: 1rem; overflow-x: auto; background: var(--soft); }
+code, pre, kbd {
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: .87em;
+}
+:not(pre) > code { background: var(--code); padding: .12rem .3rem; border-radius: 3px; overflow-wrap: anywhere; }
+blockquote { border-left: 3px solid var(--rule); margin: 1.5rem 0; padding: .2rem 1.25rem; color: var(--muted); }
+.skip-link { position: absolute; top: -8rem; left: 1rem; padding: .5rem .8rem; background: var(--panel); z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.site-header { padding: 2.8rem 0 2.6rem; }
+.terminal, .site-nav, .page-footer, .eyebrow, .section-number, .byline {
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Consolas, monospace;
+}
+.terminal { margin: 0 0 1rem; font-size: .88rem; color: var(--muted); }
+.prompt { color: var(--accent); font-weight: 600; }
+.cmd { color: var(--muted); }
+.site-nav { display: flex; gap: .4rem 1.1rem; flex-wrap: wrap; font-size: .85rem; }
+.site-nav a { text-decoration: none; }
+.site-nav a:hover, .site-nav a[aria-current="page"] { text-decoration: underline; }
+.site-nav a[aria-current="page"] { color: var(--foreground); }
+.lede { font-size: 1.13rem; color: var(--muted); max-width: 36rem; }
+.section-number { font-size: .83rem; color: var(--accent); font-weight: normal; margin-right: .35rem; }
+.home-section { border-top: 1px solid var(--rule); padding: .85rem 0 1.1rem; }
+.home-section h2 { margin: .55rem 0 .65rem; }
+.entry-list { list-style: none; padding: 0; margin: 1.1rem 0 2rem; }
+.entry-list li { padding: .85rem 0; border-bottom: 1px solid var(--rule); }
+.entry-list li:first-child { border-top: 1px solid var(--rule); }
+.entry-list .entry-title { font-weight: 600; display: block; }
+.entry-list p { color: var(--muted); font-size: .95rem; margin: .2rem 0 0; }
+.byline, .eyebrow { font-size: .8rem; color: var(--muted); }
+.signature { font-family: "Dancing Script", cursive; font-size: 1.8rem; }
+.page-footer { border-top: 1px solid var(--rule); color: var(--muted); font-size: .78rem; margin-top: 3.5rem; padding-top: 1rem; }
+.page-footer p { margin: 0 0 .5rem; }
+.page-footer a { color: var(--link); }
+.page-footer code { font-size: inherit; }
+.toc { padding: .9rem 1rem; border-left: 2px solid var(--rule); margin: 1.5rem 0; }
+.toc ul { margin: .4rem 0; }
 
-@media screen and (max-width: 600px ) {
-    body {
-        padding: 0 0.6em;
-    }
-    
+/* Article-specific layouts: shared stylesheet, no per-post embedded CSS. */
+.callout {
+  padding: .85rem 1rem; margin: 1.3rem 0; background: var(--soft);
+  border-left: 3px solid var(--link);
 }
+.callout-warn { border-left-color: var(--warning); }
+.compare { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin: 1.2rem 0; }
+.ccard { background: var(--panel); border: 1px solid var(--rule); border-radius: 4px; padding: 1rem; }
+.ccard h3 { font: 600 .8rem/1.4 "Inter", sans-serif; text-transform: uppercase; letter-spacing: .05em; margin: 0 0 .75rem; }
+.ccard ul { list-style: none; margin: 0; padding: 0; }
+.ccard li { font-size: .9rem; line-height: 1.5; }
+.ccard-bad li::before { content: "✗ "; color: #c75454; }
+.ccard-good li::before { content: "✓ "; color: var(--good); }
+.pii-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .45rem 1.1rem; list-style: none; padding: 0; }
+.pii-list li { font-size: .95rem; }
+.pii-list li::before { content: "→ "; color: var(--accent); }
+.steps { list-style: none; padding: 0; }
+.steps li { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1rem; }
+.steps li p { margin: 0; }
+.step-num {
+  flex: 0 0 1.75rem; height: 1.75rem; display: flex; align-items: center;
+  justify-content: center; border: 1px solid var(--link); border-radius: 50%;
+  color: var(--link); font: .8rem "Fira Code", monospace;
+}
+.faq-item { margin: 1.4rem 0; }
+.faq-item .q { margin: 0 0 .2rem; font-weight: 600; }
+.faq-item .a { color: var(--muted); }
+@media (max-width: 560px) {
+  body { padding: 0 1rem 1.5rem; font-size: 1rem; }
+  .site-header { padding: 1.8rem 0 2rem; }
+  .compare, .pii-list { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
