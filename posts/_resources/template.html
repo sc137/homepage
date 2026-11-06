@@ -1,79 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="$if(lang)$$lang$$else$en$endif$">
+<head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Personal website for Sable Cantus">
-  <meta name="author" content="Sable Cantus">
-  <meta http-equiv="Content-Style-Type" content="text/css" />
-  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="generator" content="pandoc">
 $for(author-meta)$
-  <meta name="author" content="$author-meta$" />
+  <meta name="author" content="$author-meta$">
 $endfor$
 $if(date-meta)$
-  <meta name="date" content="$date-meta$" />
+  <meta name="date" content="$date-meta$">
 $endif$
-  <title>$if(title-prefix)$$title-prefix$ - $endif$$pagetitle$</title>
-  <style type="text/css">code{white-space: pre;}</style>
-$if(quotes)$
-  <style type="text/css">q { quotes: "“" "”" "‘" "’"; }</style>
-$endif$
+  <title>$if(pagetitle)$$pagetitle$ — $endif$Cantus.us</title>
 $if(highlighting-css)$
-  <style type="text/css">
-$highlighting-css$
-  </style>
+  <style>$highlighting-css$</style>
 $endif$
-$for(css)$
-  <link rel="stylesheet" href="$css$" $if(html5)$$else$type="text/css" $endif$/>
-$endfor$
 $if(math)$
   $math$
 $endif$
 $for(header-includes)$
   $header-includes$
 $endfor$
-<link rel="stylesheet" href="https://fonts.xz.style/serve/inter.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@exampledev/new.css@1.1.2/new.min.css">
+$for(css)$
+  <link rel="stylesheet" href="$css$">
+$endfor$
+  <!-- Generated pages are published under /posts/, one level below the site root. -->
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  $if(title)$
-  <div class="navbar navbar-static-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <span class="doc-title">$title$</span>
-        <ul class="nav pull-right doc-info">
-          $for(author)$
-          <li><p class="navbar-text">$author$</p></li>
-          $endfor$
-          $if(date)$
-          <li><p class="navbar-text">$date$</p></li>
-          $endif$
-        </ul>
-      </div>
-    </div>
-  </div>
-  $endif$
-  <div class="container">
-    <div class="row">
-      $if(toc)$
-      <div id="$idprefix$TOC" class="span3">
-        <div class="well toc">
-        <ul>
-          <li class="nav-header">Table of Contents</li>
-        </ul>
-        $toc$
-        </div>
-      </div>
-      $endif$
-      <div class="span$if(toc)$9$else$12$endif$">
-      $for(include-before)$
-      $include-before$
-      $endfor$
-      $body$
-      $for(include-after)$
-      $include-after$
-      $endfor$
-      </div>
-    </div>
-  </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <p class="terminal"><span class="prompt">$</span> <span class="cmd">cat posts/article.html</span></p>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="../">home</a>
+    <a href="../notes/" aria-current="page">notes</a>
+    <a href="../projects/">projects</a>
+    <a href="../msac/">mt. sac</a>
+    <a href="../emeritus/">emeritus</a>
+    <a href="../music.html">music</a>
+    <a href="../certs.html">credentials</a>
+  </nav>
+</header>
+<main id="main">
+$if(date)$
+  <p class="byline">$date$</p>
+$endif$
+$if(toc)$
+  <nav class="toc" aria-label="On this page">
+    <strong>On this page</strong>
+    $toc$
+  </nav>
+$endif$
+$for(include-before)$
+  $include-before$
+$endfor$
+$body$
+$for(include-after)$
+  $include-after$
+$endfor$
+</main>
+<footer class="page-footer">
+  <p><a href="../">cantus.us</a> · <a href="https://github.com/sc137/">GitHub</a></p>
+  <p><span class="prompt">$</span> <code>curl https://cantus.us/public.key</code></p>
+</footer>
 </body>
 </html>
