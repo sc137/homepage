@@ -1,15 +1,28 @@
-Use pandoc to convert your md file into html using the same templates for html and css...
+# Publishing a note with Pandoc
 
-put this:
+Write Markdown in posts/_resources/ and publish an HTML file in posts/.
+The source file is retained; HTML is committed for static GitHub Pages hosting.
 
-% [cantus.us](http://cantus.us/)
+For example, from the repository root:
 
-at top of md file...
+    pandoc posts/_resources/encrypt-tax-docs.md \
+      --standalone \
+      --template posts/_resources/template.html \
+      --output posts/encrypt-tax-docs.html
 
-run this:
+The shared Pandoc template automatically links ../styles.css from the published
+/posts/ page. No browser-side Markdown renderer is required.
 
-pandoc infile.md -o outfile.html \
---template resources/template.html \
--s
+The heading in the Markdown file (e.g., "# Article Title") becomes the page
+heading. The Pandoc title metadata, if supplied, sets the browser title.
 
-add url to sitemap.txt
+For a new note, add the published URL to notes/index.html and sitemap.txt.
+Avoid relocating old article URLs, which may already be linked externally.
+
+Local preview from the repository root:
+
+    python3 -m http.server 8000 --bind 127.0.0.1
+
+Open http://localhost:8000/ to verify links, typography, and light/dark mode.
+Do not run this layout against /msac, /emeritus, or music.html: those pages are
+intentionally independent from the shared site style.
