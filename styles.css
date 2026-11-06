@@ -86,6 +86,9 @@ blockquote { border-left: 3px solid var(--rule); margin: 1.5rem 0; padding: .2re
 .section-number { font-size: .83rem; color: var(--accent); font-weight: normal; margin-right: .35rem; }
 .home-section { border-top: 1px solid var(--rule); padding: .85rem 0 1.1rem; }
 .home-section h2 { margin: .55rem 0 .65rem; }
+.zoom-cta { margin: 1.5rem 0 1.2rem; }
+.zoom-button { display: inline-block; font-style: italic; color: var(--muted); font-size: .95rem; text-decoration: none; padding: .5rem .8rem; border: 1px solid var(--rule); border-radius: 4px; }
+.zoom-button:hover { color: var(--link); text-decoration: underline; }
 .entry-list { list-style: none; padding: 0; margin: 1.1rem 0 2rem; }
 .entry-list li { padding: .85rem 0; border-bottom: 1px solid var(--rule); }
 .entry-list li:first-child { border-top: 1px solid var(--rule); }
