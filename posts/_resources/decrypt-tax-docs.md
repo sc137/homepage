@@ -4,7 +4,7 @@
 
 tldr;
 
-* Download [aescrypt](https://www.aescrypt.com/download/) and install
+* Download the [30-day free trial of AES Crypt](https://www.aescrypt.com/download/) and install it
 * Download the client file
 * Decrypt the file
 * Notify client they can remove temporary download
@@ -13,9 +13,9 @@ You are receiving those sensitive documents and do not want anyone getting your 
 
 ## Step 1: Download aescrypt for your computer
 
-Aescrypt is available for all types of computers. We will demonstrate how to decrypt a file for Windows 10 users.
+AES Crypt offers a 30-day free trial of its desktop software. If you need to keep using it beyond the trial, a paid perpetual license is required. This walkthrough was originally written for Windows 10 using an older version; screens and menu labels may differ from the current version.
 
-* Open your browser to [aescrypt.com](https://www.aescrypt.com/download/)
+* Open the [official AES Crypt download page](https://www.aescrypt.com/download/) and select the free trial for your computer
 * Find the appropriate installer for your computer (it's probably GUI Windows 64 bit)
 * Unzip the installation package
 
