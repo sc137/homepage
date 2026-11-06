@@ -62,6 +62,9 @@ $endfor$
 <footer class="page-footer">
   <p><a href="../">cantus.us</a> · <a href="https://github.com/sc137/">GitHub</a></p>
   <p><span class="prompt">$</span> <code>curl https://cantus.us/public.key</code></p>
+  $if(last-updated)$
+  <p class="last-updated">Last updated: $last-updated$</p>
+  $endif$
 </footer>
 </body>
 </html>
