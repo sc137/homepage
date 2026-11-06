@@ -150,8 +150,8 @@ blockquote { border-left: 3px solid var(--rule); margin: 1.5rem 0; padding: .2re
 .tui-row a { font-weight: 600; overflow-wrap: anywhere; }
 .tui-bottom { margin: .95rem 0 0 !important; }
 .tui-cursor { color: var(--accent); }
-.score-frame { width: 100%; margin: 1.5rem 0; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; }
-.score-frame iframe { display: block; width: 100%; height: min(77vh, 800px); min-height: 480px; border: 0; }
+.score-frame { width: 100%; margin: 1.5rem 0; border: 1px solid var(--rule); border-radius: 5px; overflow-x: auto; overflow-y: hidden; }
+.score-frame iframe { display: block; width: 1024px; max-width: none; height: 740px; border: 0; }
 audio { width: 100%; max-width: 530px; }
 @media (max-width: 610px) {
   .tui-content { padding: 1rem .8rem; font-size: .7rem; }
