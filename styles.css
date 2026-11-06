@@ -164,8 +164,17 @@ audio { width: 100%; max-width: 530px; }
 /* Compact single-row navigation, with readable labels and accessible full names. */
 .site-nav .nav-short { display: none; }
 @media (max-width: 600px) {
-  .site-nav { flex-wrap: nowrap; white-space: nowrap; font-size: clamp(11px, 3.2vw, 12px); gap: clamp(3px, 1vw, 5px); }
-  .site-nav a { display: inline-flex; align-items: center; min-height: 32px; }
+  .site-nav {
+    display: flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+    white-space: nowrap;
+    font-size: clamp(12px, 3.75vw, 14px);
+    overflow-x: auto;
+  }
+  .site-nav a { display: inline-flex; flex-shrink: 0; align-items: center; min-height: 40px; }
   .site-nav .nav-full { display: none; }
   .site-nav .nav-short { display: inline; }
 }
