@@ -1,126 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" initial-scale="1" />
-    <meta name="description" content="Official Homepage - Sable Cantus" />
-    <meta name="author" content="Sable Cantus" />
-    <meta name="color-scheme" content="light dark" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Cantus.us - Official Homepage</title>
-    <!-----------------------------------------------------
-           _     _                        _
- ___  __ _| |__ | | ___    ___ __ _ _ __ | |_ _   _ ___
-/ __|/ _` | '_ \| |/ _ \  / __/ _` | '_ \| __| | | / __|
-\__ \ (_| | |_) | |  __/ | (_| (_| | | | | |_| |_| \__ \
-|___/\__,_|_.__/|_|\___|  \___\__,_|_| |_|\__|\__,_|___/
-
------------------------------------------------------->
-  </head>
-
-  <body>
-    <header>
-      <p>
-        <code
-          ><span class="prompt">$ </span> <span class="cmd">./homepage.sh</span
-          ><br
-        /></code>
-        <br />
-        Official Homepage<br />
-        ==============
-      </p>
-    </header>
-    <main>
-      <p class="courses">
-        👉
-        <a href="msac/index.html">Courses Offered at Mt. San Antonio College</a>
-      </p>
-
-      <p class="courses">
-        👉
-        <a href="emeritus/index.html"
-          >Courses Offered at the Saddleback Emeritus Institute</a
-        >
-      </p>
-
-      <p>Check out my <a href="music.html" alt="music page" target="_blank">🎸 🪊 Music page 🎤 🎵</a>.</p>
-
-      <p>
-        Here are a few of my projects
-        <a
-          href="https://github.com/sc137/"
-          target="_blank"
-          title="View my github"
-          >on github</a
-        ><img src="img/octocat.png" height="20px" />.
-      </p>
-
-      <ul>
-        <li>
-          <img src="img/tippy.png" height="15" />
-          Tippy is a single page HTML5/JS
-          <a href="http://sc137.github.io/tippy/" target="_blank">
-            tip calculator app for your phone</a
-          >
-        </li>
-        <li>
-          I use this
-          <a href="https://sc137.github.io/web-timer/" target="_blank"
-            >⏱️ Web Timer app</a
-          >
-          in zoom and on the projector.
-        </li>
-        <li>
-          Try out this MTG ⚔️
-          <a href="https://sc137.github.io/CommanderLifeTracker" target="_blank"
-            >Commander Life Tracker 🎲🎲.</a
-          >
-        </li>
-        <li>
-          Are you looking for my class videos? They are available on <a href="https://www.youtube.com/@professor_sable" target="_blank">Youtube: Professor Sable</a>
-        </li>
-        <li>
-          <a
-            href="https://msac-cisw.github.io/cisw17-demos/index.html"
-            target="_blank"
-            >View the class Web Demos.</a
-          >
-        </li>
-        <li>Here are some notes on 
-          <a href="posts/secure-sharing.html" target="_blank">
-            securely sharing personal or private information over email.
-          </a>
-        </li>
-      </ul>
-
-      
-      <p>Thanks for visiting,</p>
-
-      <p class="signature">Sable</p>
-
-      <p>
-        Here are some of my
-        <a href="certs.html" target="_blank"
-          >trainings and certifications</a
-        >.
-      </p>
-    </main>
-
-    <footer>
-      &copy;
-      <script>
-        let year = new Date();
-        document.write(year.getFullYear());
-      </script>
-      All Rights Reserved
-      <br />
-      <span class="prompt">$ </span>
-      <code><i class="cmd">curl https://cantus.us/public.key</i></code>
-    </footer>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sable Cantus: teaching, projects, notes, and music.">
+  <meta name="color-scheme" content="light dark">
+  <title>Cantus.us — Sable Cantus</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <p class="terminal"><span class="prompt">$</span> <span class="cmd">./homepage.sh</span></p>
+  <nav class="site-nav" aria-label="Primary navigation">
+      <a href="" aria-current="page">home</a>
+      <a href="notes/">notes</a>
+      <a href="projects/">projects</a>
+      <a href="msac/">mt. sac</a>
+      <a href="emeritus/">emeritus</a>
+      <a href="music.html">music</a>
+      <a href="certs.html">credentials</a>
+    </nav>
+</header>
+<main id="main">
+  <h1>Sable Cantus</h1>
+  <p class="lede">A personal website for teaching, software projects, writing, and music.</p>
+  <section class="home-section" aria-labelledby="teaching-title">
+    <h2 id="teaching-title"><span class="section-number">01 /</span> Teaching</h2>
+    <p><a href="msac/">Courses at Mt. San Antonio College</a> · <a href="emeritus/">Saddleback Emeritus Institute</a></p>
+    <p>Course information, learning resources, and teaching-related links. Class videos are on <a href="https://www.youtube.com/@professor_sable">Professor Sable's YouTube channel</a>.</p>
+  </section>
+  <section class="home-section" aria-labelledby="projects-title">
+    <h2 id="projects-title"><span class="section-number">02 /</span> Projects</h2>
+    <p>Small tools and experiments, including Tippy, Web Timer, and Commander Life Tracker.</p>
+    <p><a href="projects/">Browse projects</a> · <a href="https://github.com/sc137/">GitHub repositories</a></p>
+  </section>
+  <section class="home-section" aria-labelledby="notes-title">
+    <h2 id="notes-title"><span class="section-number">03 /</span> Notes</h2>
+    <p>Occasional guides and reference notes on security, technology, and practicing music.</p>
+    <p><a href="notes/">Read notes and articles</a></p>
+  </section>
+  <section class="home-section" aria-labelledby="music-title">
+    <h2 id="music-title"><span class="section-number">04 /</span> Music</h2>
+    <p>Performances, recordings, and related projects.</p>
+    <p><a href="music.html">Visit the music page</a></p>
+  </section>
+  <section class="home-section" aria-labelledby="about-title">
+    <h2 id="about-title"><span class="section-number">05 /</span> Credentials</h2>
+    <p>Professional certifications and continued training.</p>
+    <p><a href="certs.html">Training and certifications</a></p>
+  </section>
+  <p>Thanks for visiting,</p>
+  <p class="signature">Sable</p>
+</main>
+<footer class="page-footer">
+  <p><a href="">cantus.us</a> · <a href="https://github.com/sc137/">GitHub</a></p>
+  <p><span class="prompt">$</span> <code>curl https://cantus.us/public.key</code></p>
+</footer>
+</body>
 </html>
