@@ -1,0 +1,56 @@
+/* Shared styling for preview versions of the MSAC and Emeritus teaching pages.
+   The existing pages and their stylesheets remain unchanged. */
+.course-page .eyebrow { margin-bottom: .6rem; }
+.course-page .lead-row { display: flex; align-items: center; gap: 1.2rem; margin: 1rem 0 1.65rem; }
+.course-page .lead-row img { display: block; width: 110px; max-width: 26%; height: auto; object-fit: contain; flex-shrink: 0; }
+.course-page .lead-row h1 { margin-bottom: .5rem; }
+.course-page .lead-row .lede { margin-bottom: 0; }
+.course-page .subtitle { color: var(--muted); margin: -.2rem 0 1.3rem; }
+.course-page .section-jump { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin: 1.4rem 0 2rem; font: .85rem "Fira Code", ui-monospace, monospace; }
+.course-page .section-jump a { display: inline-block; padding: .25rem .7rem; border: 1px solid var(--rule); border-radius: 4px; text-decoration: none; }
+.course-page .section-jump a:hover { background: var(--soft); }
+.course-page .term-head { padding: .1rem 0 .3rem; border-bottom: 1px solid var(--rule); margin-bottom: 1.4rem; }
+.course-page .term-head h2 { margin: .5rem 0 .65rem; }
+.course-page .course {
+  padding: 1.1rem 1.3rem;
+  border: 5px solid;
+  margin: 1.25rem 0 1.5rem;
+  border-radius: 3px;
+  box-shadow: 2px 2px rgba(211, 211, 211, .5);
+}
+.course-page .course.purple { border-color: rgba(128, 0, 128, .5); background-color: rgba(128, 0, 128, .05); }
+.course-page .course.blue { border-color: rgba(0, 0, 255, .5); background-color: rgba(0, 0, 255, .05); }
+.course-page .course.green { border-color: rgba(0, 128, 0, .5); background-color: rgba(0, 128, 0, .05); }
+.course-page .course.orange { border-color: rgba(255, 166, 0, .5); background-color: rgba(255, 166, 0, .05); }
+.course-page .course h3 { margin: 0 0 .95rem; font-size: clamp(1.18rem, 3vw, 1.42rem); }
+.course-page .course h2 { margin: 0 0 .95rem; font-size: clamp(1.3rem, 3.4vw, 1.6rem); }
+.course-page .course > :last-child { margin-bottom: 0; }
+.course-page .course img { max-width: 155px; height: auto; }
+.course-page .course figure { margin: 1rem 0; }
+.course-page .course p { overflow-wrap: anywhere; }
+.course-page .program-list > article { padding: .65rem 0 1.15rem; border-bottom: 1px solid var(--rule); }
+.course-page .program-list > article h3 { margin: 1rem 0 .7rem; }
+.course-page table { width: 100%; border-collapse: collapse; font-size: .91rem; line-height: 1.55; }
+.course-page th, .course-page td { padding: .55rem .6rem; border-bottom: 1px solid var(--rule); text-align: left; vertical-align: top; }
+.course-page th { background: var(--soft); font-weight: 600; }
+.course-page table caption { font-weight: 600; font-family: "Lora", Georgia, serif; text-align: left; margin: 1rem 0 .55rem; font-size: 1.17rem; }
+.course-page .table-scroll { max-width: 100%; overflow-x: auto; margin: .75rem 0 1.5rem; }
+.course-page .table-scroll table { min-width: 520px; }
+.course-page .schedule th:first-child, .course-page .schedule td:first-child { width: 5.2rem; white-space: nowrap; }
+.course-page .schedule tr:has(i) { color: var(--muted); }
+.course-page .preview-note { padding: .7rem 0; color: var(--muted); font-size: .85rem; }
+.course-page .cta-row { border-top: 1px solid var(--rule); padding-top: 1rem; margin-top: 1.3rem; }
+@media (prefers-color-scheme: dark) {
+  .course-page .course { box-shadow: 2px 2px rgba(0, 0, 0, .22); }
+  .course-page .course.purple { border-color: rgba(207, 124, 224, .72); background-color: rgba(160, 72, 175, .08); }
+  .course-page .course.blue { border-color: rgba(124, 151, 255, .72); background-color: rgba(65, 85, 189, .1); }
+  .course-page .course.green { border-color: rgba(106, 197, 121, .72); background-color: rgba(47, 130, 64, .1); }
+  .course-page .course.orange { border-color: rgba(255, 181, 81, .72); background-color: rgba(177, 110, 29, .1); }
+}
+@media (max-width: 560px) {
+  .course-page .lead-row { gap: .7rem; align-items: flex-start; }
+  .course-page .lead-row img { width: 70px; }
+  .course-page .course { padding: .85rem 1rem; border-width: 5px; }
+  .course-page .course img { max-width: 140px; }
+  .course-page th, .course-page td { padding: .5rem .4rem; }
+}
