@@ -1,10 +1,51 @@
----
-permalink: /404.html
----
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<title>Cantus.us</title>
-<meta http-equiv="REFRESH" content="0;url=http://cantus.us"></HEAD>
-</HTML>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Page not found on Cantus.us. Find your way back through the site.">
+  <meta name="color-scheme" content="light dark">
+  <title>404 / File not found — Cantus.us</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+  <p class="terminal"><span class="prompt">$</span> <span class="cmd">./homepage.sh</span></p>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <a href="./">home</a>
+    <a href="notes/">notes</a>
+    <a href="projects/">projects</a>
+    <a href="msac/">msac</a>
+    <a href="emeritus/">emeritus</a>
+    <a href="music.html">music</a>
+    <a href="certs.html">credentials</a>
+    <a href="archive/">archive</a>
+  </nav>
+</header>
+<main id="main">
+  <p class="eyebrow">ERR 404 / ENOENT</p>
+  <h1>Well, that file has wandered off.</h1>
+  <p class="lede">The requested page is missing, renamed, or stored in an unexpected directory.</p>
+  <div class="tui-window" role="group" aria-label="Terminal-style site recovery menu">
+    <div class="tui-titlebar"><span class="tui-lights" aria-hidden="true"><i></i><i></i><i></i></span><span>cantus.us — recovery shell</span><span class="tui-titlebar-end">exit 127</span></div>
+    <div class="tui-content">
+      <p class="tui-command"><span class="prompt">$</span> cat requested-page.html</p>
+      <p class="tui-error">cat: requested-page.html: No such file or directory</p>
+      <p class="tui-command"><span class="prompt">$</span> ls /</p>
+      <div class="tui-row"><span class="tui-type">drwxr-xr-x</span><a href="/">home/</a><span>Start here</span></div>
+      <div class="tui-row"><span class="tui-type">drwxr-xr-x</span><a href="/notes/">notes/</a><span>Writing and reference guides</span></div>
+      <div class="tui-row"><span class="tui-type">drwxr-xr-x</span><a href="/projects/">projects/</a><span>Tools and experiments</span></div>
+      <div class="tui-row"><span class="tui-type">drwxr-xr-x</span><a href="/archive/">archive/</a><span>Older things worth keeping</span></div>
+      <p class="tui-command tui-bottom"><span class="prompt">$</span> <span class="tui-cursor" aria-hidden="true">_</span></p>
+    </div>
+  </div>
+  <p class="byline">The server is fine. This page just isn't here.</p>
+</main>
+<footer class="page-footer">
+  <p><a href="/">cantus.us</a> · &copy; 2026 Sable Cantus</p>
+  <p><span class="prompt">$</span> <code>curl https://cantus.us/public.key</code></p>
+  <p class="last-updated">Last updated: <time datetime="2026-11-06">November 6, 2026</time></p>
+</footer>
+</body>
+</html>
