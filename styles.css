@@ -132,3 +132,31 @@ blockquote { border-left: 3px solid var(--rule); margin: 1.5rem 0; padding: .2re
   .compare, .pii-list { grid-template-columns: 1fr; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Terminal-inspired directory listings and 404 recovery screen. */
+.tui-window { border: 1px solid var(--rule); border-radius: 7px; background: var(--panel); overflow: hidden; margin: 1.5rem 0; box-shadow: 0 8px 28px rgba(0, 0, 0, .06); }
+.tui-titlebar { display: flex; align-items: center; gap: 1rem; min-width: 0; padding: .6rem .9rem; border-bottom: 1px solid var(--rule); background: var(--soft); color: var(--muted); font: .72rem/1.4 "Fira Code", ui-monospace, monospace; }
+.tui-titlebar-end { margin-left: auto; }
+.tui-lights { display: inline-flex; gap: .33rem; flex-shrink: 0; }
+.tui-lights i { display: block; width: .5rem; height: .5rem; border: 1px solid var(--rule); border-radius: 50%; background: var(--muted); opacity: .45; }
+.tui-content { padding: 1.15rem 1.1rem; font: .8rem/1.7 "Fira Code", ui-monospace, monospace; }
+.tui-content p { margin-bottom: .8rem; }
+.tui-command { color: var(--foreground); }
+.tui-muted { color: var(--muted); }
+.tui-error { color: var(--accent); }
+.tui-row { display: grid; grid-template-columns: 110px minmax(0, 190px) minmax(0, 1fr); column-gap: .7rem; padding: .25rem 0; border-top: 1px dashed var(--rule); align-items: baseline; }
+.tui-row span:last-child { color: var(--muted); }
+.tui-type { color: var(--muted); }
+.tui-row a { font-weight: 600; overflow-wrap: anywhere; }
+.tui-bottom { margin: .95rem 0 0 !important; }
+.tui-cursor { color: var(--accent); }
+.score-frame { width: 100%; margin: 1.5rem 0; border: 1px solid var(--rule); border-radius: 5px; overflow: hidden; }
+.score-frame iframe { display: block; width: 100%; height: min(77vh, 800px); min-height: 480px; border: 0; }
+audio { width: 100%; max-width: 530px; }
+@media (max-width: 610px) {
+  .tui-content { padding: 1rem .8rem; font-size: .7rem; }
+  .tui-row { grid-template-columns: minmax(0, 1fr); gap: .05rem; padding: .65rem 0; }
+  .tui-type { display: none; }
+  .tui-titlebar-end { display: none; }
+  .score-frame iframe { min-height: 380px; }
+}
