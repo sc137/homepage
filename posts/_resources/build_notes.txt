@@ -7,11 +7,14 @@ For example, from the repository root:
 
     pandoc posts/_resources/encrypt-tax-docs.md \
       --standalone \
+      --metadata last-updated="$(date +%F)" \
       --template posts/_resources/template.html \
       --output posts/encrypt-tax-docs.html
 
-The shared Pandoc template automatically links ../styles.css from the published
-/posts/ page. No browser-side Markdown renderer is required.
+The shared Pandoc template automatically links ../styles.css and prints
+Last updated at the bottom of each published /posts/ page. The command above
+sets that date to the publishing day; update it whenever the article changes.
+No browser-side Markdown renderer is required.
 
 The heading in the Markdown file (e.g., "# Article Title") becomes the page
 heading. The Pandoc title metadata, if supplied, sets the browser title.
