@@ -54,3 +54,6 @@
   .course-page .course img { max-width: 140px; }
   .course-page th, .course-page td { padding: .5rem .4rem; }
 }
+
+/* Alternating shading for the Emeritus course schedule. */
+.course-page .schedule tbody tr:nth-child(even) { background-color: var(--soft); }
