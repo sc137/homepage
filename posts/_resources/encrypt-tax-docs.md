@@ -6,11 +6,11 @@ It's that time. We all are doing our taxes online now. Some of us need some help
 
 *Do not ever, under any circumstance, email a document that has your SSN, home address, phone number, bank information, etc. unencrypted. That is a good way to lose all of your money and even your identity.*
 
-I use two free services to send my encrypted documents out: AESCrypt and Dropbox.
+For encryption, I recommend starting with the [30-day free trial of AES Crypt](https://www.aescrypt.com/download/). After the trial, continued desktop use requires a paid perpetual license. You can share the encrypted file through Dropbox, Google Drive, OneDrive, or another file-sharing service.
 
 ### Step 1: Install AESCrypt
 
-Get AESCrypt installed on your computer. Go [here](https://www.aescrypt.com) and install for your platform.
+Download the [AES Crypt desktop free trial](https://www.aescrypt.com/download/) for your operating system and install it. The trial lasts 30 days, so you can test the process before deciding whether to purchase a license.
 
 ### Step 2: Zip up all of those files
 
